@@ -30,6 +30,66 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.7.13",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
+        },
+        "require": {
+          "composer/installers": "^1.4",
+          "ffraenz/private-composer-installer": "^2.0"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "analogmemory/wp-sync-db",
+          "type": "wordpress-plugin",
+          "version": "1.6",
+          "dist": {
+              "type": "zip",
+              "url": "https://github.com/AnalogMemory/wp-sync-db/archive/master.zip"
+          }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "wp-sync-db/wp-sync-db-media-files",
+          "type": "wordpress-plugin",
+          "version": "master",
+          "dist": {
+              "type": "zip",
+              "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
+          }
+      }
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/wpml-media-translation.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/wpml-string-translation.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/wpml-translation-management.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/acfml.git"
     }
   ],
   "require": {
@@ -39,7 +99,21 @@
     "oscarotero/env": "^1.1.0",
     "roots/wordpress": "5.1.1",
     "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wp-sync-db/wp-sync-db-media-files": "dev-master",
+    "analogmemory/wp-sync-db": "1.6",
+    "wpackagist-plugin/autodescription": "*",
+    "wpackagist-plugin/cookie-notice": "*",
+    "wpackagist-plugin/remove-query-strings-from-static-resources": "*",
+    "wpackagist-plugin/query-monitor": "^3.1",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.7.13",
+    "aitormendez/sitepress-multilingual-cms": "*",
+    "aitormendez/wpml-media-translation": "*",
+    "aitormendez/wpml-string-translation": "*",
+    "aitormendez/wpml-translation-management": "*",
+    "aitormendez/acfml": "*",
+    "wpackagist-plugin/wp-optimize": "*",
+    "wpackagist-plugin/easy-wp-smtp": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
