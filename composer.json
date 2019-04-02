@@ -113,7 +113,8 @@
     "aitormendez/wpml-translation-management": "*",
     "aitormendez/acfml": "*",
     "wpackagist-plugin/wp-optimize": "*",
-    "wpackagist-plugin/easy-wp-smtp": "*"
+    "wpackagist-plugin/easy-wp-smtp": "*",
+    "johnbillion/extended-cpts": "^4.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
