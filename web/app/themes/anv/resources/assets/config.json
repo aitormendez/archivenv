@@ -6,6 +6,9 @@
     ],
     "customizer": [
       "./scripts/customizer.js"
+    ],
+    "respbgimages": [
+      "./scripts/respbgimages.js"
     ]
   },
   "publicPath": "/app/themes/anv",

@@ -23,7 +23,7 @@ $options
     'label' => 'Background image',
     'instructions' => 'Conjunto de las imágenes que se mostrarán aleatoriamente en el fondo de la página principal',
   ])
-  ->addImage('sutitut_img', [
+  ->addImage('bg_img', [
       'label' => 'Image',
       'instructions' => 'Add background image',
       'return_format' => 'array',
