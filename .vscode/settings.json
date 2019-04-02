@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "zenMode.fullScreen": false,
+    "prettier.eslintIntegration": true,
+    "prettier.stylelintIntegration": true
+}
