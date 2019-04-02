@@ -114,7 +114,8 @@
     "aitormendez/acfml": "*",
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
-    "johnbillion/extended-cpts": "^4.2"
+    "johnbillion/extended-cpts": "^4.2",
+    "stoutlogic/acf-builder": "^1.8"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
