@@ -58,16 +58,16 @@
         },
         {
             "name": "aitormendez/sitepress-multilingual-cms",
-            "version": "4.2.1",
+            "version": "4.2.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git",
-                "reference": "a2e130200c496f461741a6ea1098c9eb25a7c246"
+                "reference": "8b77c942db204f0b4cc87206bfdf228a47878211"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/sitepress-multilingual-cms/zipball/a2e130200c496f461741a6ea1098c9eb25a7c246",
-                "reference": "a2e130200c496f461741a6ea1098c9eb25a7c246",
+                "url": "https://api.github.com/repos/aitormendez/sitepress-multilingual-cms/zipball/8b77c942db204f0b4cc87206bfdf228a47878211",
+                "reference": "8b77c942db204f0b4cc87206bfdf228a47878211",
                 "shasum": ""
             },
             "require": {
@@ -86,10 +86,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/sitepress-multilingual-cms/tree/4.2.1",
+                "source": "https://github.com/aitormendez/sitepress-multilingual-cms/tree/4.2.5",
                 "issues": "https://github.com/aitormendez/sitepress-multilingual-cms/issues"
             },
-            "time": "2019-02-21T11:43:39+00:00"
+            "time": "2019-04-03T18:59:58+00:00"
         },
         {
             "name": "aitormendez/wpml-media-translation",
@@ -553,19 +553,20 @@
         },
         {
             "name": "oscarotero/env",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/env.git",
-                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db"
+                "reference": "4ab45ce5c1f2c62549208426bfa20a3d5fa008c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/env/zipball/0f676e41d758fa984806c32e27f0cf7afa63d8db",
-                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/4ab45ce5c1f2c62549208426bfa20a3d5fa008c6",
+                "reference": "4ab45ce5c1f2c62549208426bfa20a3d5fa008c6",
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
                 "php": ">=5.2"
             },
             "type": "library",
@@ -591,7 +592,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2017-07-17T20:41:59+00:00"
+            "time": "2019-04-03T18:28:43+00:00"
         },
         {
             "name": "phpoption/phpoption",
