@@ -1,5 +1,12 @@
 .home {
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+  .c-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1000;
+  }
 }
