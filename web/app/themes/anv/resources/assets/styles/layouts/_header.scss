@@ -1,11 +1,41 @@
-.banner .nav {
-  @apply list-reset flex flex-wrap;
-}
+.banner {
+  .container {
+    padding-top: 14px;
+    padding-bottom: 9px;
 
-.banner .nav a {
-  @apply inline-block px-4 py-2 border-none;
+    .brand {
+      letter-spacing: 0.1em;
+      line-height: 0.9em;
 
-  &:hover {
-    color: darken(#525ddc, 30%);
+      .archive {
+        position: relative;
+        top: -4px;
+      }
+
+      .anv {
+        border-left: 2px solid config("colors.naranja");
+        position: relative;
+        padding-bottom: 4px;
+        padding-left: 12px;
+        top: -2px;
+      }
+    }
+
+    .nav {
+      @apply list-reset flex flex-wrap;
+
+      a {
+        @apply inline-block px-4 border-none;
+
+        &:hover {
+          color: darken(#525ddc, 100%);
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    top: 13px;
+    right: 14px;
   }
 }

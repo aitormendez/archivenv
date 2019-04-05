@@ -44,8 +44,8 @@ View the full documentation at https://tailwindcss.com.
 */
 
 let colors = {
-  'naranja': '#f05123',
-  'marron': '#594a42',
+  'naranja': '#cd694c',
+  'marron': '#8a614f',
 
   'primary': '#525ddc',
 
@@ -213,6 +213,9 @@ module.exports = {
       'Liberation Mono',
       'Courier New',
       'monospace',
+    ],
+    'logo': [
+      'librebaskerville',
     ],
   },
 

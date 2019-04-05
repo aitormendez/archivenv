@@ -24,6 +24,7 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+@import "~hamburgers/_sass/hamburgers/hamburgers";
 
 /**
  * This injects any component classes registered by Tailwind plugins.
