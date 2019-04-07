@@ -1,34 +1,90 @@
 .banner {
-  .container {
-    padding-top: 14px;
-    padding-bottom: 9px;
+  .brand {
+    @apply block pt-20 leading-tight;
 
-    .brand {
-      letter-spacing: 0.1em;
-      line-height: 0.9em;
+    span {
+      @apply block mx-auto text-center;
 
-      .archive {
-        position: relative;
+      &.archive {
+        @apply relative text-xl text-naranja mb-4 tracking-15 font-semibold;
+
         top: -4px;
       }
 
-      .anv {
-        border-left: 2px solid config("colors.naranja");
-        position: relative;
-        padding-bottom: 4px;
-        padding-left: 12px;
-        top: -2px;
+      &.anv {
+        @apply text-3xl tracking-15;
+
+        width: 160px;
+
+        &::before {
+          content: "";
+
+          @apply block relative bg-naranja mx-auto;
+
+          top: -7px;
+          width: 70px;
+          height: 2px;
+        }
+      }
+    }
+  }
+
+  .nav-lang {
+    .nav {
+      .wpml-ls-item {
+        @apply block text-marron text-xs border-l px-2 mx-0 border-naranja tracking-wide;
+      }
+
+      .wpml-ls-last-item {
+        @apply border-r;
       }
     }
 
-    .nav {
-      @apply list-reset flex flex-wrap;
+    a {
+      @apply text-marron uppercase;
+    }
+  }
 
-      a {
-        @apply inline-block px-4 border-none;
+  .nav-primary {
+    @apply absolute flex justify-center w-screen h-screen pin-t bg-white p-10;
 
-        &:hover {
-          color: darken(#525ddc, 100%);
+    left: 0;
+    transition: left $trans;
+
+    &.cerrado {
+      left: -100vw;
+    }
+
+    a {
+      @apply block;
+
+      &:hover {
+        @apply text-grey;
+      }
+    }
+
+    .menu-principal-container {
+      @apply flex;
+
+      .nav {
+        @apply flex flex-col list-reset text-center justify-center;
+
+        >li {
+          @apply pb-4;
+
+          >a {
+            @apply text-naranja uppercase tracking-wide text-naranja font-semibold;
+          }
+
+          ul {
+            @apply list-reset;
+
+            li {
+              a {
+                @apply pt-1 text-marron;
+              }
+            }
+          }
         }
       }
     }
@@ -37,5 +93,114 @@
   .hamburger {
     top: 13px;
     right: 14px;
+  }
+
+  @screen lg {
+    @apply flex p-4 justify-between;
+
+    .brand {
+      @apply pt-0;
+
+      span {
+        @apply inline-block mx-0 text-left;
+
+        &.archive {
+          @apply mb-0 text-xs pr-1;
+
+          top: 0;
+        }
+
+        &.anv {
+          @apply relative text-xl pl-2 border-l-2 border-naranja tracking-10;
+
+          width: auto;
+          top: 1px;
+
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+
+    .nav-lang {
+      a {
+        @apply text-marron uppercase font-semibold;
+
+        font-size: 0.6rem;
+
+        span {
+          @apply relative;
+
+          top: -1px;
+        }
+      }
+    }
+
+    .nav-primary {
+      @apply static w-auto h-auto p-0 pl-4 pr-2 mt-1;
+
+      left: auto;
+
+      &.cerrado {
+        left: auto;
+      }
+
+      .menu-principal-container {
+        @apply mt-1;
+
+        .nav {
+          @apply flex-row text-left;
+
+          a {
+            @apply text-xs font-normal;
+          }
+
+          >li {
+            @apply pb-0 mx-2;
+
+            &.menu-item-has-children {
+              cursor: pointer;
+            }
+
+            .sub-menu {
+              @apply absolute block z-20;
+
+              top: 64px;
+              height: 0;
+              overflow: hidden;
+              transition: height $trans;
+
+              &.open {
+                height: 220px;
+              }
+
+              a {
+                @apply block mb-1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .fondomenu {
+      left: 0;
+      top: 57px;
+      height: 0;
+      transition: height $trans;
+
+      .borders {
+        display: none;
+      }
+
+      &.open {
+        height: 220px;
+
+        .borders {
+          display: block;
+        }
+      }
+    }
   }
 }

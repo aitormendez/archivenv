@@ -47,7 +47,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'lang_selector' => __('Lang selector', 'sage')
     ]);
 
     /**
@@ -92,6 +93,10 @@ add_action('widgets_init', function () {
     register_sidebar([
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
+    ] + $config);
+    register_sidebar([
+        'name'          => __('Lang', 'sage'),
+        'id'            => 'lang_selector'
     ] + $config);
 });
 

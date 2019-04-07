@@ -1,5 +1,6 @@
 .home {
   .c-bg-image {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -8,5 +9,11 @@
     background-size: cover;
     background-position: center;
     z-index: -1000;
+  }
+
+  @screen md {
+    .c-bg-image {
+      @apply block;
+    }
   }
 }

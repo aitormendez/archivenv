@@ -4,8 +4,21 @@ export default {
 
     $('.hamburger').click(function() {
       $(this).toggleClass('is-active');
+      $('.nav-primary').toggleClass('cerrado');
     });
-    
+
+    $('.menu-item-has-children').mouseover(function() {
+      $(this).find('.sub-menu').toggleClass('open');
+      $('.fondomenu').toggleClass('open');
+    });
+
+    $('.menu-item-has-children').mouseout(function() {
+      $(this).find('.sub-menu').removeClass('open');
+      $('.fondomenu').removeClass('open');
+    });
+
+
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

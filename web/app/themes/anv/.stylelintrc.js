@@ -1,6 +1,8 @@
 module.exports = {
   'extends': 'stylelint-config-standard',
   'rules': {
+    'selector-combinator-space-after': null,
+    'selector-combinator-space-before': null,
     'no-empty-source': null,
     'string-quotes': 'double',
     'at-rule-no-unknown': [

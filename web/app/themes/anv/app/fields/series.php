@@ -17,7 +17,10 @@ $serie
 		'return_format' => 'array',
 		'preview_size' => 'thumbnail',
 		'library' => 'all',
-	]);
+	])
+    ->addNumber('orden', [
+        'label' => 'Orden',
+  ]);
 
 return $serie;
 

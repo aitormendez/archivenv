@@ -292,6 +292,7 @@ module.exports = {
   */
 
   leading: {
+    '09': 0.9,
     'none': 1,
     'tight': 1.25,
     'normal': 1.5,
@@ -312,6 +313,11 @@ module.exports = {
   */
 
   tracking: {
+    '01': '0.01em',
+    '02': '0.02em',
+    '10': '0.1em',
+    '15': '0.15em',
+    '20': '0.2em',
     'tight': '-0.05em',
     'normal': '0',
     'wide': '0.05em',
