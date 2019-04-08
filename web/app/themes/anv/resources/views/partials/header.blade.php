@@ -17,9 +17,9 @@
   </div>
 
 
-  <button class="hamburger hamburger--spring absolute z-50" type="button">
+  <button class="hamburger hamburger--spring absolute z-50 lg:hidden" type="button">
     <span class="hamburger-box">
-      <span class="hamburger-inner lg:hidden"></span>
+      <span class="hamburger-inner"></span>
     </span>
   </button>
   <div class="fondomenu absolute hidden lg:block bg-white w-screen z-10 pb-4">
