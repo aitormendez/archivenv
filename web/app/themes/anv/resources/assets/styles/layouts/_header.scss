@@ -166,13 +166,14 @@
             .sub-menu {
               @apply absolute block z-20;
 
-              top: 64px;
+              top: 0;
               height: 0;
               overflow: hidden;
               transition: height $trans;
+              padding-top: 67px;
 
               &.open {
-                height: 220px;
+                height: 260px;
               }
 
               a {
@@ -188,7 +189,8 @@
       left: 0;
       top: 57px;
       height: 0;
-      transition: height $trans;
+      padding-bottom: 0;
+      transition: height $trans, padding-bottom $trans;
 
       .borders {
         display: none;
@@ -196,6 +198,7 @@
 
       &.open {
         height: 220px;
+        padding-bottom: 1em;
 
         .borders {
           display: block;

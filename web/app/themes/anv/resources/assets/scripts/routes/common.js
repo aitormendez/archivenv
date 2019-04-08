@@ -7,12 +7,12 @@ export default {
       $('.nav-primary').toggleClass('cerrado');
     });
 
-    $('.menu-item-has-children').mouseover(function() {
+    $('.menu-item-has-children').click(function() {
       $(this).find('.sub-menu').toggleClass('open');
       $('.fondomenu').toggleClass('open');
     });
 
-    $('.menu-item-has-children').mouseout(function() {
+    $('.menu-item-has-children').mouseleave(function() {
       $(this).find('.sub-menu').removeClass('open');
       $('.fondomenu').removeClass('open');
     });

@@ -22,7 +22,7 @@
       <span class="hamburger-inner"></span>
     </span>
   </button>
-  <div class="fondomenu absolute hidden lg:block bg-white w-screen z-10 pb-4">
+  <div class="fondomenu absolute hidden lg:block bg-white w-screen z-10 overflow-hidden">
     <div class="borders w-full h-full border-t border-b py-4 border-naranja"></div>
   </div>
 </header>
