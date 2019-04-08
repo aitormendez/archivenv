@@ -12,10 +12,10 @@ export default {
       $('.fondomenu').toggleClass('open');
     });
 
-    $('.menu-item-has-children').mouseleave(function() {
-      $(this).find('.sub-menu').removeClass('open');
-      $('.fondomenu').removeClass('open');
-    });
+    // $('.menu-item-has-children').mouseleave(function() {
+    //   $(this).find('.sub-menu').removeClass('open');
+    //   $('.fondomenu').removeClass('open');
+    // });
 
 
 
