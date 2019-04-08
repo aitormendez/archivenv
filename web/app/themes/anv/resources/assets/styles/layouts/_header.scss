@@ -63,7 +63,9 @@
       }
     }
 
-    .menu-principal-container {
+    .menu-principal-container,
+    .menu-principal-catalan-container,
+    .menu-principal-esp-container {
       @apply flex;
 
       .nav {
@@ -146,7 +148,9 @@
         left: auto;
       }
 
-      .menu-principal-container {
+      .menu-principal-container,
+      .menu-principal-catalan-container,
+      .menu-principal-esp-container {
         @apply mt-1;
 
         .nav {
