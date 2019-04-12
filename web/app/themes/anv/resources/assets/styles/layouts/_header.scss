@@ -86,6 +86,10 @@
                 @apply pt-1 text-marron;
               }
             }
+
+            &.sub-menu {
+              width: 0;
+            }
           }
         }
       }
@@ -167,21 +171,24 @@
               cursor: pointer;
             }
 
-            .sub-menu {
-              @apply absolute block z-20;
+            ul {
+              &.sub-menu {
+                @apply absolute block z-20;
 
-              top: 0;
-              height: 0;
-              overflow: hidden;
-              transition: height $trans;
-              padding-top: 67px;
+                top: 0;
+                height: 0;
+                overflow: hidden;
+                transition: height $trans;
+                padding-top: 67px;
 
-              &.open {
-                height: 260px;
-              }
+                &.open {
+                  height: 260px;
+                  width: auto;
+                }
 
-              a {
-                @apply block mb-1;
+                a {
+                  @apply block mb-1;
+                }
               }
             }
           }

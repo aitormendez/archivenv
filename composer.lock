@@ -23,16 +23,16 @@
         },
         {
             "name": "aitormendez/acfml",
-            "version": "1.1",
+            "version": "1.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:aitormendez/acfml.git",
-                "reference": "6a56cea0cce28140e33b6438bea90119d359511b"
+                "reference": "91af31664328909f316147cb1568f3d7aef69e30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/acfml/zipball/6a56cea0cce28140e33b6438bea90119d359511b",
-                "reference": "6a56cea0cce28140e33b6438bea90119d359511b",
+                "url": "https://api.github.com/repos/aitormendez/acfml/zipball/91af31664328909f316147cb1568f3d7aef69e30",
+                "reference": "91af31664328909f316147cb1568f3d7aef69e30",
                 "shasum": ""
             },
             "require": {
@@ -51,10 +51,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/acfml/tree/1.1",
+                "source": "https://github.com/aitormendez/acfml/tree/1.2",
                 "issues": "https://github.com/aitormendez/acfml/issues"
             },
-            "time": "2019-04-11T08:56:47+00:00"
+            "time": "2019-04-11T09:56:37+00:00"
         },
         {
             "name": "aitormendez/sitepress-multilingual-cms",
