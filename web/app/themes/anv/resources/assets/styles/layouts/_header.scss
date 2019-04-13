@@ -86,10 +86,6 @@
                 @apply pt-1 text-marron;
               }
             }
-
-            &.sub-menu {
-              width: 0;
-            }
           }
         }
       }
@@ -180,6 +176,7 @@
                 overflow: hidden;
                 transition: height $trans;
                 padding-top: 67px;
+                width: 0;
 
                 &.open {
                   height: 260px;

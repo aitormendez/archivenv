@@ -11,3 +11,6 @@ $color-naranja: config("colors.naranja");
 $color-marron: config("colors.marron");
 
 $trans: 0.5s;
+
+$slick-loader-path: '~slick-carousel/slick/';
+$slick-font-path: '#{$slick-loader-path}fonts/';
