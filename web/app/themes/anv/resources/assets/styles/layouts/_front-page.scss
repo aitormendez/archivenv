@@ -11,6 +11,34 @@
     z-index: -1000;
   }
 
+  .grid {
+    margin-top: $pad-4;
+
+    .serie {
+      @apply border-naranja border-t text-naranja;
+
+      display: flex;
+      width: 100%;
+      padding: $pad-1 0;
+
+      .img-wrap {
+        width: 50%;
+      }
+
+      .data-wrap {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        h2 {
+          font-weight: normal;
+          display: block;
+        }
+      }
+    }
+  }
+
   @screen md {
     .c-bg-image {
       @apply block;

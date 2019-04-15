@@ -12,5 +12,11 @@ $color-marron: config("colors.marron");
 
 $trans: 0.5s;
 
-$slick-loader-path: '~slick-carousel/slick/';
-$slick-font-path: '#{$slick-loader-path}fonts/';
+$slick-loader-path: "~slick-carousel/slick/";
+$slick-font-path: "#{$slick-loader-path}fonts/";
+
+$pad: 30px;
+$pad-1: calc(#{$pad} / 2);
+$pad-2: calc(#{$pad-1} * 2);
+$pad-3: calc(#{$pad-1} * 3);
+$pad-4: calc(#{$pad-1} * 4);

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f31f679ab253b90c13366000decce59b",
+    "content-hash": "2c9ab7114a5f59ed7a049b1a14c3c667",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -583,6 +583,51 @@
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
             "time": "2018-10-02T13:27:20+00:00"
+        },
+        {
+            "name": "log1x/sage-directives",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Log1x/sage-directives.git",
+                "reference": "8dfa3f58d1bea38cdfacdb0cc737011b4ba4b1e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Log1x/sage-directives/zipball/8dfa3f58d1bea38cdfacdb0cc737011b4ba4b1e1",
+                "reference": "8dfa3f58d1bea38cdfacdb0cc737011b4ba4b1e1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "package",
+            "autoload": {
+                "files": [
+                    "src/Directives.php",
+                    "src/Utilities.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brandon Nifong",
+                    "email": "brandon@tendency.me"
+                }
+            ],
+            "description": "A set of Blade directives for use with Roots Sage.",
+            "homepage": "https://github.com/log1x/sage-directives",
+            "keywords": [
+                "blade",
+                "directives",
+                "roots",
+                "sage",
+                "wordpress"
+            ],
+            "time": "2019-03-02T10:29:51+00:00"
         },
         {
             "name": "nesbot/carbon",
