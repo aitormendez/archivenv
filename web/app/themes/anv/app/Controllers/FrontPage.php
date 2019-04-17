@@ -21,6 +21,7 @@ class FrontPage extends Controller
       'order'             => 'ASC',
     );
     $terms = get_terms('serie', $args );
+
     return $terms;
   }
 }

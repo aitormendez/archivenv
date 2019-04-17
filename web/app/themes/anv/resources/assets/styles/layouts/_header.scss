@@ -1,21 +1,13 @@
 .banner {
   .brand {
-    @apply block pt-20 leading-tight;
-
     span {
-      @apply block mx-auto text-center;
-
       &.archive {
         @apply relative text-xl text-naranja mb-4 tracking-15 font-semibold;
 
         top: -4px;
       }
 
-      &.anv {
-        @apply text-3xl tracking-15;
-
-        width: 160px;
-
+      &.navarro {
         &::before {
           content: "";
 
@@ -97,8 +89,8 @@
     right: 14px;
   }
 
-  @screen lg {
-    @apply flex p-4 justify-between;
+  @screen md {
+    height: 55px;
 
     .brand {
       @apply pt-0;
@@ -112,8 +104,9 @@
           top: 0;
         }
 
-        &.anv {
-          @apply relative text-xl pl-2 border-l-2 border-naranja tracking-10;
+        &.navarro,
+        &.vives {
+          @apply relative text-xl pl-2 tracking-10;
 
           width: auto;
           top: 1px;
@@ -126,6 +119,16 @@
     }
 
     .nav-lang {
+      margin-left: 260px;
+    }
+  }
+
+  @screen lg {
+    @apply flex p-4 justify-between;
+
+    .nav-lang {
+      margin-left: 0;
+
       a {
         @apply text-marron uppercase font-semibold;
 
@@ -169,13 +172,13 @@
 
             ul {
               &.sub-menu {
-                @apply absolute block z-20;
+                @apply absolute block z-50;
 
                 top: 0;
                 height: 0;
                 overflow: hidden;
                 transition: height $trans;
-                padding-top: 67px;
+                padding-top: 62px;
                 width: 0;
 
                 &.open {
@@ -195,10 +198,11 @@
 
     .fondomenu {
       left: 0;
-      top: 57px;
+      top: 49px;
       height: 0;
       padding-bottom: 0;
       transition: height $trans, padding-bottom $trans;
+      z-index: 1;
 
       .borders {
         display: none;

@@ -20,10 +20,9 @@ $serie
 	])
     ->addNumber('orden', [
         'label' => 'Orden',
-  ]);
+	])
+		->addText('periodo', [
+			'label' => 'Periodo',
+]);
 
 return $serie;
-
-
-
-
