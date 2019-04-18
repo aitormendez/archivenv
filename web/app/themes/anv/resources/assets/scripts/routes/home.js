@@ -24,7 +24,7 @@ export default {
     if (width >= 769) {
       $('.container-grid .grid').slick({
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         fade: true,
         speed: 2000,
         autoplaySpeed: 5000,
