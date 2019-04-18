@@ -6,7 +6,7 @@
 
 	@endcomponent
 
-	<div class="container-grid md:w-3/4">
+	<div class="container-grid md:w-3/5">
 		<div class="grid z-0">
 
 			@foreach ($series as $serie)

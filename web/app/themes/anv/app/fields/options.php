@@ -19,16 +19,16 @@ $options
     ->setLocation('options_page', '==', 'theme-options');
 
 $options
-->addRepeater('background_image', [
-    'label' => 'Background image',
-    'instructions' => 'Conjunto de las imágenes que se mostrarán aleatoriamente en el fondo de la página principal',
-  ])
-  ->addImage('bg_img', [
-      'label' => 'Image',
-      'instructions' => 'Add background image',
-      'return_format' => 'array',
-      'preview_size' => 'thumbnail',
-      'library' => 'all',
-  ]);
+    ->addRepeater('background_image', [
+        'label' => 'Background image',
+        'instructions' => 'Conjunto de las imágenes que se mostrarán aleatoriamente en el fondo de la página principal',
+    ])
+    ->addImage('bg_img', [
+        'label' => 'Image',
+        'instructions' => 'Add background image',
+        'return_format' => 'array',
+        'preview_size' => 'thumbnail',
+        'library' => 'all',
+    ]);
 
 return $options;
