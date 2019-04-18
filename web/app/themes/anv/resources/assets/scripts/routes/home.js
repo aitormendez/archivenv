@@ -1,3 +1,6 @@
+var imagesLoaded = require('imagesloaded');
+imagesLoaded.makeJQueryPlugin($);
+
 export default {
   init() {
     // JavaScript to be fired on the home page
@@ -14,7 +17,7 @@ export default {
       elemento.css('left', posX);
 
       let alto = elemento.height();
-      let posY = (($(window).height() - alto - 55) / 3) * 2;
+      let posY = (($(window).height() - alto) / 3) * 2;
       elemento.css('top', posY);
       console.log('alto: ' + alto);
       console.log('winY: ' + $(window).height());
@@ -25,7 +28,7 @@ export default {
     if (width >= 769) {
       $('.container-grid .grid').slick({
         arrows: false,
-        autoplay: true,
+        // autoplay: true,
         fade: true,
         speed: 2000,
         autoplaySpeed: 5000,
@@ -33,7 +36,11 @@ export default {
 
       $('.slick-current').focus();
 
-      posicionar();
+      $('.container-grid .grid').imagesLoaded(function() {
+        posicionar();
+      });
+
+
 
       $(window).resize(function() {
         posicionar();
