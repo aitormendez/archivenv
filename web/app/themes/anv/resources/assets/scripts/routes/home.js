@@ -8,21 +8,16 @@ export default {
     // Slick carousel
 
     let width = $(window).width();
-
-
+    let elemento = $('.container-grid .grid');
 
     function posicionar() {
-      let elemento = $('.container-grid .grid');
       let ancho = elemento.width();
       let posX = (($(window).width() - ancho) / 3) * 2;
       elemento.css('left', posX);
 
       let alto = elemento.height();
-      let posY = (($(window).height() - alto) / 3) * 2;
+      let posY = (($(window).height() - alto - 55) / 3) * 2;
       elemento.css('top', posY);
-      console.log('alto: ' + alto);
-      console.log('winY: ' + $(window).height());
-      console.log('posY: ' + posY);
     }
 
 
