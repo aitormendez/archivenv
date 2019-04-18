@@ -9,9 +9,10 @@ export default {
 
     let width = $(window).width();
 
+
+
     function posicionar() {
       let elemento = $('.container-grid .grid');
-
       let ancho = elemento.width();
       let posX = (($(window).width() - ancho) / 3) * 2;
       elemento.css('left', posX);
@@ -34,9 +35,10 @@ export default {
         autoplaySpeed: 5000,
       });
 
-      $('.slick-current').focus();
+      $('.container-grid .grid').css('visibility', 'hidden');
 
       $('.container-grid .grid').imagesLoaded(function() {
+        $('.container-grid .grid').css('visibility', 'visible');
         posicionar();
       });
 
