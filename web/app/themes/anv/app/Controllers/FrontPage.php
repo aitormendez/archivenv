@@ -24,4 +24,10 @@ class FrontPage extends Controller
 
     return $terms;
   }
+
+  public function descripcion() {
+    $desc= get_bloginfo('description');
+		$output = html_entity_decode($desc);
+    return $output;
+  }
 }

@@ -6,6 +6,10 @@
 
 	@endcomponent
 
+	<div class="descripcion pl-10 pr-10 mt-4 mb-4 md:absolute md:p-0 md:m-0">
+		<p class="text-grey text-xs text-center m-0 tracking-02 md:text-left md:text-white"> {!! $descripcion !!} </p>
+	</div>
+
 	<div class="container-grid md:w-3/5">
 		<div class="grid z-0">
 
@@ -17,7 +21,7 @@
 
 				<div>
 					<div class="fondo hidden absolute h-full md:block md:bg-white md:opacity-75"></div>
-					<a href="{{ $term_link }}" class="serie relative flex pt-5 pb-5 border-naranja border-t text-marron md:border-t-0 md:pl-5 md:pr-5">
+					<a href="{{ $term_link }}" class="serie relative flex p-5 border-naranja border-t text-marron md:border-t-0">
 						<div class="img-wrap w-1/2">
 						<img
 						src="{{ $image['url'] }}"
