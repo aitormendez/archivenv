@@ -1,4 +1,11 @@
 .home {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
   .c-bg-image {
     display: none;
     position: absolute;
@@ -8,12 +15,14 @@
     height: 100%;
     background-size: cover;
     background-position: center;
-    z-index: -1000;
+    z-index: -900;
+  }
+
+  .container-grid {
+    max-width: 1000px;
   }
 
   .grid {
-    margin-top: $pad-4;
-
     .serie {
       .data-wrap {
         h2 {
@@ -26,15 +35,12 @@
 
   @screen md {
     .grid {
-      position: absolute;
-      width: 500px;
-      right: 100px;
-      bottom: 100px;
-
       .slick-slide {
-        width: 500px;
-        background-color: white;
-        opacity: 0.75;
+        position: relative;
+
+        .fondo {
+          width: 100%;
+        }
       }
     }
 
@@ -43,23 +49,31 @@
     }
   }
 
-  @screen lg {
-    .grid {
-      width: 700px;
+  // @screen lg {
+  //   .grid {
+  //     width: 700px;
 
-      .slick-slide {
-        width: 700px;
-      }
-    }
-  }
+  //     .slick-slide {
+  //       width: 700px;
 
-  @screen xl {
-    .grid {
-      width: 900px;
+  //       .fondo {
+  //         width: 700px;
+  //       }
+  //     }
+  //   }
+  // }
 
-      .slick-slide {
-        width: 900px;
-      }
-    }
-  }
+  // @screen xl {
+  //   .grid {
+  //     width: 900px;
+
+  //     .slick-slide {
+  //       width: 900px;
+
+  //       .fondo {
+  //         width: 900px;
+  //       }
+  //     }
+  //   }
+  // }
 }
