@@ -10,7 +10,7 @@
 		<p class="text-grey text-xs text-center m-0 tracking-02 md:text-left md:text-white"> {!! $descripcion !!} </p>
 	</div>
 
-	<div class="container-grid md:w-3/5">
+	<div class="container-grid md:w-1/2">
 		<div class="grid z-0">
 
 			@foreach ($series as $serie)
