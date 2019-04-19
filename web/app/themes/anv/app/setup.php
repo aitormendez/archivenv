@@ -159,4 +159,7 @@ add_action('after_setup_theme', function () {
     add_image_size( 'vert-1200', 1200, 1500, true );
     add_image_size( 'vert-800', 800, 1000, true );
     add_image_size( 'vert-400', 400, 500, true );
+    add_image_size('cuadrado-300', 300, 289, true);
+    add_image_size('cuadrado-600', 600, 579, true);
+    add_image_size('cuadrado-1200', 1200, 1157, true);
 });

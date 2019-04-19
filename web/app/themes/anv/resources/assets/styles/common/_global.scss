@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply mb-2 leading-tight;
+  @apply mb-2 leading-tight uppercase font-normal text-naranja tracking-02;
 }
 
 p {
@@ -26,5 +26,19 @@ a {
 
   &:hover {
     @apply border-primary;
+  }
+}
+
+body:not(.home) {
+  .content {
+    h2 {
+      @apply text-base;
+    }
+
+    p,
+    ol,
+    ul {
+      @apply font-serif leading-normal text-sm text-grey-darkest;
+    }
   }
 }

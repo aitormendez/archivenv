@@ -7,6 +7,8 @@
   }
 
   .c-bg-image {
+    @apply bg-grey-darkest;
+
     display: none;
     position: absolute;
     top: 0;

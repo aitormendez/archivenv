@@ -19,6 +19,9 @@ class App extends Controller
             }
             return __('Latest Posts', 'sage');
         }
+        if (is_tax('serie')) {
+            return single_term_title();
+        }
         if (is_archive()) {
             return get_the_archive_title();
         }

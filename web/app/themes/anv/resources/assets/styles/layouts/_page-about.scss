@@ -1,0 +1,17 @@
+.about-archive-navarro-vives,
+.sobre-archivo-navarro-vives,
+.sobre-larxiu-navarro-vives {
+  .content {
+    @apply pt-10;
+
+    h2 {
+      @apply mt-10;
+    }
+
+    ol {
+      >li {
+        @apply mb-4;
+      }
+    }
+  }
+}
