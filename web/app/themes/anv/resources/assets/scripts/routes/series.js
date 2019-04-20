@@ -10,10 +10,10 @@ export default {
       selector: 'a',
       speed: 1000,
       preload: 2,
-      hideBarsDelay: 1000,
+      hideBarsDelay: 100000,
       mode: 'lg-fade',
       download: false,
-      height: 'calc(100vh - 200px)',
+      height: 'calc(100vh - 250px)',
     });
 
     lg.on('onBeforeOpen.lg', function() {

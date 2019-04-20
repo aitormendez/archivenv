@@ -42,3 +42,9 @@ body:not(.home) {
     }
   }
 }
+
+@screen md {
+  [role=document] {
+    margin-top: 55px;
+  }
+}

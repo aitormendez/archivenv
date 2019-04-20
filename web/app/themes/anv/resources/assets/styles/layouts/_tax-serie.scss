@@ -13,20 +13,7 @@
   margin-bottom: auto;
 }
 
-.lg-toolbar {
-  @apply fixed bg-black opacity-100;
-
-  position: fixed;
-  top: 0;
-}
-
-.lg-backdrop {
-  display: none;
-}
-
-.lg-sub-html {
-  @apply bg-white mb-10 text-naranja text-xs p-0;
-}
+/* stylelint-disable */
 
 .lg-actions {
   .lg-icon {
@@ -37,4 +24,35 @@
       @apply text-grey-light;
     }
   }
+}
+
+.lg-toolbar {
+  @apply fixed bg-black opacity-100 bg-white text-naranja border-t border-b border-naranja;
+
+  margin-top: 55px;
+  top: 0;
+
+  .lg-icon {
+    @apply text-marron;
+
+    &:hover {
+      @apply text-grey-light;
+    }
+  }
+
+  #lg-counter {
+    @apply font-sans text-naranja text-sm;
+
+    padding-top: 15px;
+  }
+}
+
+/* stylelint-enable */
+
+.lg-backdrop {
+  display: none;
+}
+
+.lg-sub-html {
+  @apply bg-white mb-10 text-naranja text-xs p-0;
 }

@@ -1,4 +1,4 @@
-<header class="banner bg-white md:p-3">
+<header class="banner bg-white md:py-3 md:px-5 md:fixed md:pin-t w-full">
   <a class="brand block pt-20 leading-tight md:inline-block" href="{{ home_url('/') }}">
       <span class="archive block mx-auto text-center uppercase border-color-naranja">Archive</span> 
       <span class="navarro block mx-auto text-center font-logo text-marron text-3xl tracking-15 md:border-l-2 md:border-naranja">navarro</span> 
