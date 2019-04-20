@@ -22,6 +22,18 @@ class App extends Controller
         if (is_tax('serie')) {
             return single_term_title();
         }
+        if (is_archive('bio')) {
+            if (ICL_LANGUAGE_CODE === 'es') {
+                return 'Josep Navarro Vives: Biografia';
+            }
+            if (ICL_LANGUAGE_CODE === 'en') {
+                return 'Josep Navarro Vives: biography';
+            }
+            if (ICL_LANGUAGE_CODE === 'ca') {
+                return 'Josep Navarro Vives: Biografia';
+            }
+            
+        }
         if (is_archive()) {
             return get_the_archive_title();
         }

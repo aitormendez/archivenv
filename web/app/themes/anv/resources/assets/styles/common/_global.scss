@@ -40,7 +40,7 @@ body:not(.home) {
     p,
     ol,
     ul {
-      @apply font-serif leading-normal text-sm text-grey-darkest;
+      @apply font-serif leading-normal text-xs text-grey-darkest;
     }
   }
 }
@@ -48,5 +48,25 @@ body:not(.home) {
 @screen md {
   [role=document] {
     margin-top: 55px;
+  }
+}
+
+.columns {
+  article:first-child {
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  img {
+    width: 95%;
+  }
+
+  @screen md {
+    columns: 2;
+  }
+
+  @screen lg {
+    columns: 3;
   }
 }
