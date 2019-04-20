@@ -1,5 +1,5 @@
-:focus {
-  outline: none;
+*:focus {
+  outline: none !important;
 }
 
 html {
@@ -17,6 +17,8 @@ h6 {
 
 p {
   @apply mb-3 leading-normal;
+
+  hyphens: auto;
 }
 
 a {
