@@ -10,7 +10,7 @@ export default {
       selector: 'a',
       speed: 1000,
       preload: 2,
-      hideBarsDelay: 100000,
+      hideBarsDelay: 1000,
       mode: 'lg-fade',
       download: false,
       height: 'calc(100vh - 250px)',
