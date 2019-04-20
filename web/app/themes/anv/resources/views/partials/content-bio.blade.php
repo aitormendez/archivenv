@@ -1,10 +1,9 @@
-<article @php post_class( 'montserrat') 
+<article @php post_class( 'montserrat mb-8') 
 @endphp>
   <header>
-    <h2 class="entry-title text-lg mt-8 first-child:mt-0">{!! get_the_title() !!}</h2>
+    <h2 class="entry-title text-lg">{!! get_the_title() !!}</h2>
   </header>
-  <div class="entry-summary">
-    @php the_content() 
-@endphp
+  <div class="keep">
+    @php the_content() @endphp
   </div>
 </article>

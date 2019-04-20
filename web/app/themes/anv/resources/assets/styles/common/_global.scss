@@ -6,6 +6,10 @@ html {
   @apply font-sans;
 }
 
+.admin-bar {
+  padding-top: 32px;
+}
+
 h1,
 h2,
 h3,
@@ -42,31 +46,35 @@ body:not(.home) {
     ul {
       @apply font-serif leading-normal text-xs text-grey-darkest;
     }
+
+    .columns {
+      article {
+        display: inline-block;
+
+        &:first-child {
+          h2 {
+            margin-top: 0;
+          }
+        }
+      }
+
+      img {
+        width: 95%;
+      }
+
+      @screen md {
+        columns: 2;
+      }
+
+      @screen lg {
+        columns: 3;
+      }
+    }
   }
 }
 
 @screen md {
   [role=document] {
     margin-top: 55px;
-  }
-}
-
-.columns {
-  article:first-child {
-    h2 {
-      margin-top: 0;
-    }
-  }
-
-  img {
-    width: 95%;
-  }
-
-  @screen md {
-    columns: 2;
-  }
-
-  @screen lg {
-    columns: 3;
   }
 }
