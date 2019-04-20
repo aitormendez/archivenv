@@ -5,3 +5,36 @@
     }
   }
 }
+
+.lg-outer {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.lg-toolbar {
+  @apply fixed bg-black opacity-100;
+
+  position: fixed;
+  top: 0;
+}
+
+.lg-backdrop {
+  display: none;
+}
+
+.lg-sub-html {
+  @apply bg-white mb-10 text-naranja text-xs p-0;
+}
+
+.lg-actions {
+  .lg-icon {
+    background-color: rgba(255, 255, 255, 0.63);
+    color: #000;
+
+    &:hover {
+      @apply text-grey-light;
+    }
+  }
+}

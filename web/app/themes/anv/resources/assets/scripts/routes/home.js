@@ -1,5 +1,6 @@
 var imagesLoaded = require('imagesloaded');
 imagesLoaded.makeJQueryPlugin($);
+import 'slick-carousel/slick/slick.min.js';
 
 export default {
   init() {

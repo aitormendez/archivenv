@@ -5193,6 +5193,11 @@ jpegtran-bin@^3.0.0:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
+jquery@>=1.7.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
+  integrity sha512-ggRCXln9zEqv6OqAGXFEcshF5dSBvCkzj6Gm2gzuR5fWawaX8t7cxKVkkygKODrDAzKdoYw3l/e3pm3vlT4IbQ==
+
 jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
@@ -5406,6 +5411,41 @@ levn@^0.3.0, levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+lg-autoplay@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/lg-autoplay/-/lg-autoplay-1.0.4.tgz#2591ea2b84043a5cd5d8cb1969c502921a77ba2c"
+  integrity sha1-JZHqK4QEOlzV2MsZacUCkhp3uiw=
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-fullscreen@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lg-fullscreen/-/lg-fullscreen-1.1.0.tgz#763d54093759ea2ea9eafd5ff1275e58422291e1"
+  integrity sha512-Sh2mZMR8QYrYNgKcCwbACs3LO8OQg6puisIMDkd4ULEJicCt0zLZ9aT4YgNhcYMYBXAU2sHwbjHJjF7TxVT3hw==
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-pager@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/lg-pager/-/lg-pager-1.0.2.tgz#e9d928de8f9fa440151d0eab8265dcfb9accb041"
+  integrity sha1-6dko3o+fpEAVHQ6rgmXc+5rMsEE=
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-thumbnail@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lg-thumbnail/-/lg-thumbnail-1.1.0.tgz#91344d9cca35807d44f9f8346d04589c15cc16b2"
+  integrity sha1-kTRNnMo1gH1E+fg0bQRYnBXMFrI=
+  dependencies:
+    jquery ">=1.7.0"
+
+lightgallery@^1.6.12:
+  version "1.6.12"
+  resolved "https://registry.yarnpkg.com/lightgallery/-/lightgallery-1.6.12.tgz#c024428d1488969075dc551a85dddf905adb0e4b"
+  integrity sha512-t8hIgZc3ZvGW9pG8Bd68bXcUj7FWGewaroT7ADYo2fvQTgkqcMMLtXw9yQclS7BF0soadA0B6BN3MWOEiS2pYA==
+  dependencies:
+    jquery ">=1.7.0"
 
 limiter@^1.0.5:
   version "1.1.4"
