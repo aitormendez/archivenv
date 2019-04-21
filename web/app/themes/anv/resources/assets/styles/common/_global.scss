@@ -7,7 +7,33 @@ html {
 }
 
 .admin-bar {
-  padding-top: 32px;
+  padding-top: 46px;
+
+  .banner {
+    .nav-lang {
+      margin-top: calc(1.25rem + 46px);
+    }
+
+    .hamburger {
+      top: 59px;
+    }
+  }
+
+  @screen md {
+    padding-top: 32px;
+
+    .banner {
+      padding-top: calc(0.75rem + 32px);
+
+      .nav-lang {
+        margin-top: 8px;
+      }
+
+      .hamburger {
+        top: 45px;
+      }
+    }
+  }
 }
 
 h1,
