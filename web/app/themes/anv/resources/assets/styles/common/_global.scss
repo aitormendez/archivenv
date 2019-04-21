@@ -66,6 +66,7 @@ body:not(.home) {
 
       @screen md {
         columns: 2;
+        column-gap: 2em;
       }
 
       @screen lg {

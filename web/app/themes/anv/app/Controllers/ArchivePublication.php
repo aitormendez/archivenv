@@ -20,5 +20,5 @@ class ArchivePublication extends Controller
     return $thumb;
   }
 
-  
+
 }

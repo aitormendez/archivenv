@@ -4,8 +4,7 @@
   "license": "MIT",
   "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
   "homepage": "https://roots.io/bedrock/",
-  "authors": [
-    {
+  "authors": [{
       "name": "Scott Walkinshaw",
       "email": "scott.walkinshaw@gmail.com",
       "homepage": "https://github.com/swalkinshaw"
@@ -26,8 +25,7 @@
   "config": {
     "preferred-install": "dist"
   },
-  "repositories": [
-    {
+  "repositories": [{
       "type": "composer",
       "url": "https://wpackagist.org"
     },
@@ -50,25 +48,25 @@
     {
       "type": "package",
       "package": {
-          "name": "analogmemory/wp-sync-db",
-          "type": "wordpress-plugin",
-          "version": "1.6",
-          "dist": {
-              "type": "zip",
-              "url": "https://github.com/AnalogMemory/wp-sync-db/archive/master.zip"
-          }
+        "name": "analogmemory/wp-sync-db",
+        "type": "wordpress-plugin",
+        "version": "1.6",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/AnalogMemory/wp-sync-db/archive/master.zip"
+        }
       }
     },
     {
       "type": "package",
       "package": {
-          "name": "wp-sync-db/wp-sync-db-media-files",
-          "type": "wordpress-plugin",
-          "version": "master",
-          "dist": {
-              "type": "zip",
-              "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
-          }
+        "name": "wp-sync-db/wp-sync-db-media-files",
+        "type": "wordpress-plugin",
+        "version": "master",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
+        }
       }
     },
     {
@@ -114,6 +112,7 @@
     "aitormendez/acfml": "*",
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
+    "wpackagist-plugin/crop-thumbnails": "*",
     "johnbillion/extended-cpts": "^4.2",
     "stoutlogic/acf-builder": "^1.8"
   },
