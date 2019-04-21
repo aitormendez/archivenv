@@ -3,8 +3,9 @@
       {!! get_the_content() !!}
   @endif
 
-    @if (get_the_post_thumbnail())
-      {!! get_the_post_thumbnail() !!}
+  @if (ArchivePublication::cover())
+      {!! ArchivePublication::cover() !!}
   @endif
 
 </article>
+
