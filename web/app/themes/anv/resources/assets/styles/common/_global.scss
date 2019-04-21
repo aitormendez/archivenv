@@ -44,7 +44,7 @@ body:not(.home) {
     p,
     ol,
     ul {
-      @apply font-serif leading-normal text-xs text-grey-darkest;
+      @apply font-serif leading-normal text-xs text-grey-darker;
     }
 
     .columns {

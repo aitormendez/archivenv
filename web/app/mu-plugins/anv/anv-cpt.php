@@ -65,11 +65,19 @@ load_textdomain('anv-CPT', WPMU_PLUGIN_DIR . '/' .plugin_basename( dirname( __FI
         'name_admin_bar'        => __( 'Publications', 'anv-CPT' ),
     ];
 
+    $args_cols = [
+        'featured_image' => array(
+			'title'          => 'Cover',
+			'featured_image' => 'thumbnail'
+		),
+    ];
+
     register_extended_post_type(
         'publication',
         [
             'show_in_rest' => true,
             'labels'       => $args_publication,
+            'admin_cols'   => $args_cols,
         ],
         [
           'singular' => 'Publication',
@@ -77,6 +85,11 @@ load_textdomain('anv-CPT', WPMU_PLUGIN_DIR . '/' .plugin_basename( dirname( __FI
           'slug'     => 'publication'
         ]
     );
+
+    register_extended_taxonomy( 'publication_type', ['publication'], [
+        'show_in_rest' => true,
+        'hierarchical' => false,
+    ] );
 
     
 
