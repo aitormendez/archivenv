@@ -24,5 +24,17 @@ export default {
       $('.main').removeClass('invisible')
     });
 
+    function resize() {
+      $('article').each(function() {
+        let ancho = $(this).width();
+        $(this).height(ancho - 5);
+      });
+    }
+
+    resize();
+    window.onresize = function() {
+      resize();
+    };
+
   },
 };
