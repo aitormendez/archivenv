@@ -20,6 +20,10 @@ export default {
       $('.main').addClass('invisible')
     });
 
+    lg.on('onSlideItemLoad.lg', function() {
+      $('.main').addClass('invisible')
+    });
+
     lg.on('onBeforeClose.lg', function() {
       $('.main').removeClass('invisible')
     });
