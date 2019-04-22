@@ -21,8 +21,11 @@ $serie
     ->addNumber('orden', [
         'label' => 'Orden',
 	])
-		->addText('periodo', [
-			'label' => 'Periodo',
-]);
+	->addText('periodo', [
+		'label' => 'Periodo',
+	])
+	->addText('nombre_periodo', [
+		'label' => 'Nombre del periodo',
+	]);
 
 return $serie;

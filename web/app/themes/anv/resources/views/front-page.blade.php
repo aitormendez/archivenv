@@ -35,8 +35,11 @@
 						/>
 						</div>
 
-						<div class="data-wrap flex flex-col  w-1/2 justify-center content-center text-center p-6 pr-0">
-							<h2 class="text-sm mb-0">{!! $serie->name !!}</h2>
+						<div class="data-wrap flex flex-col  w-1/2 justify-center content-center text-center p-6 pr-0">	
+							@if (get_field('nombre_periodo', 'serie_' . $serie->term_id))
+								<p class="text-sm mb-0">{{ get_field('nombre_periodo', 'serie_' . $serie->term_id )}}</p>
+							@endif
+							<h2 class="text-marron text-sm mb-0">{!! $serie->name !!}</h2>
 							<p class="text-sm mb-10"> ({{ get_field('periodo', 'serie_' . $serie->term_id) }})</p>
 							<p class="font-bold italic text-xs">{{ $image['title'] }}</p>
 							<p class="text-xs">{{ $image['caption'] }}</p>
