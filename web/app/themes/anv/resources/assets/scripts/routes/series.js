@@ -6,27 +6,39 @@ export default {
   init() {
     // JavaScript to be fired
 
-    let lg = $('.grid').lightGallery({
-      selector: 'a',
-      speed: 1000,
-      preload: 2,
-      hideBarsDelay: 1000,
-      mode: 'lg-fade',
-      download: false,
-      height: 'calc(100vh - 250px)',
-    });
+    let width = $(window).width();
 
-    lg.on('onBeforeOpen.lg', function() {
-      $('.main').addClass('invisible')
-    });
+    console.log(window.devicePixelRatio || 1);
 
-    lg.on('onSlideItemLoad.lg', function() {
-      $('.main').addClass('invisible')
-    });
+    if (width > 768) {
+      let lg = $('.grid').lightGallery({
+        selector: 'a',
+        speed: 1000,
+        preload: 2,
+        hideBarsDelay: 1000,
+        mode: 'lg-fade',
+        download: false,
+        height: 'calc(100vh - 250px)',
+      });
 
-    lg.on('onBeforeClose.lg', function() {
-      $('.main').removeClass('invisible')
-    });
+      lg.on('onBeforeOpen.lg', function() {
+        $('.main').addClass('invisible')
+      });
+
+      lg.on('onSlideItemLoad.lg', function() {
+        $('.main').addClass('invisible')
+      });
+
+      lg.on('onBeforeClose.lg', function() {
+        $('.main').removeClass('invisible')
+      });
+    }
+
+    resize();
+
+    window.onresize = function() {
+      resize();
+    };
 
     function resize() {
       $('article').each(function() {
@@ -35,10 +47,7 @@ export default {
       });
     }
 
-    resize();
-    window.onresize = function() {
-      resize();
-    };
+
 
   },
 };

@@ -67,7 +67,7 @@
           @apply pb-4;
 
           >a {
-            @apply text-naranja uppercase tracking-wide text-naranja font-semibold;
+            @apply text-marron uppercase tracking-wide font-semibold;
           }
 
           ul {
@@ -77,6 +77,13 @@
               a {
                 @apply pt-1 text-marron;
               }
+            }
+          }
+
+          &.current-menu-parent,
+          &.current-menu-item {
+            a {
+              @apply text-naranja;
             }
           }
         }
