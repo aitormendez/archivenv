@@ -39,6 +39,7 @@
     .descripcion {
       top: 100px;
       left: 25px;
+      max-width: 150px;
 
       p span {
         @apply block;
@@ -64,6 +65,7 @@
     .descripcion {
       top: 125px;
       left: 50px;
+      max-width: 200px;
     }
   }
 
