@@ -113,6 +113,7 @@
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
     "wpackagist-plugin/crop-thumbnails": "*",
+    "wpackagist-plugin/wpforms-lite": "*",
     "johnbillion/extended-cpts": "^4.2",
     "stoutlogic/acf-builder": "^1.8"
   },
