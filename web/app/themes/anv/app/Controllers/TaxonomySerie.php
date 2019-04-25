@@ -20,5 +20,19 @@ class TaxonomySerie extends Controller
     return $attachment_alt;
   }
 
-  
+  public function fraseContacto() {
+
+    if (ICL_LANGUAGE_CODE === 'es') {
+      $frase = 'Contáctenos para ver más obra de esta serie';
+    }
+    if (ICL_LANGUAGE_CODE === 'en') {
+        $frase = 'Contact us to view more artwork in this series';
+    }
+    if (ICL_LANGUAGE_CODE === 'ca') {
+        $frase = 'Contacti\'ns per veure més obra d\'aquesta sèrie';
+    }
+    
+    return $frase;
+  }
+
 }
