@@ -59,7 +59,7 @@ a {
   }
 }
 
-body:not(.home) {
+body:not(.home):not(.contact):not(.contacte):not(.contacto) {
   .content {
     h2 {
       @apply text-base;
