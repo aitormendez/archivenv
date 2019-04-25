@@ -23,7 +23,7 @@
 			$icl_adjust_id_url_filter_off = $orig_flag_value;
 		@endphp
 
-		@if ( in_array($term_default->slug, ['doors', 'boats', 'geometry', 'optic-kinetic', 'mexico', 'fruits']))
+		@if ( in_array($term_default->slug, ['doors', 'boats', 'geometry', 'optic-kinetic', 'mexico', 'fruits', 'urban-spaces', 'shadows', 'atmospheres']))
 			
 			@php 
 			$image = get_field('featured_image_serie', 'serie_' . $serie->term_id); $term_link = get_term_link($serie->name,
