@@ -2,6 +2,8 @@
 
 @section('content')
 
+@include('partials.page-header')
+
 @query([
   'post_type' => 'publication',
   'post_status'  => array( 'publish' ),
@@ -17,7 +19,7 @@
 ])
 
 <section>
-<h2 class="pt-10 pb-6 text-xl">{{ __('Catalogues', 'sage') }}</h2>
+<h2>{{ __('Catalogues', 'sage') }}</h2>
   <div class="columns">
     @posts
       @include('partials.content-'.get_post_type())
@@ -40,7 +42,7 @@
 ])
 
 <section>
-<h2>{{ __('Bibliography', 'sage') }}</h2>
+<h2>{{ __('Selected Bibliography', 'sage') }}</h2>
   <div class="columns">
     @posts
       @include('partials.content-'.get_post_type())

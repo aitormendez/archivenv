@@ -163,3 +163,11 @@ add_action('after_setup_theme', function () {
     add_image_size('cuadrado-600', 600, 579, true);
     add_image_size('cuadrado-1200', 1200, 1157, true);
 });
+
+/**
+ * i18n https://roots.io/sage/docs/theme-localization/
+ */
+
+add_action('after_setup_theme', function () {
+    load_theme_textdomain('sage', get_template_directory() . '/lang');
+});

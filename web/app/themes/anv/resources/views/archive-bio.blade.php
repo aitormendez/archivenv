@@ -18,6 +18,21 @@
 @endwhile
 </div>
 
+@query([
+  'post_type' => 'page',
+  'pagename' => 'awards-and-honours',
+])
+
+<section>
+  @posts
+    <h2 class="pb-6">@title</h2>
+    <div class="entry-content">
+      @content
+    </div>
+  @endposts
+</section>
+
+
 
 {!! get_the_posts_navigation() !!}
 

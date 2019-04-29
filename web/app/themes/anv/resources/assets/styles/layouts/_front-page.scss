@@ -43,6 +43,10 @@
 
       p span {
         @apply block;
+
+        &.name {
+          @apply mb-4;
+        }
       }
     }
 

@@ -44,8 +44,10 @@ View the full documentation at https://tailwindcss.com.
 */
 
 let colors = {
-  'naranja': '#cd694c',
-  'marron': '#8a614f',
+  'naranja': '#f05123',
+  'marron': '#97614d',
+  'pantone-1665-U': '#cd694c',
+  'pantone-1685-U': '#8a614f',
 
   'primary': '#525ddc',
 
