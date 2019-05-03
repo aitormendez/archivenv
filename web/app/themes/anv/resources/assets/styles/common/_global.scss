@@ -43,7 +43,7 @@ h6 {
   @apply mb-2 leading-tight uppercase font-normal text-naranja tracking-02;
 }
 
-h2 {
+body:not(.home) h2 {
   @apply border-b border-naranja mt-8 mb-6 pb-2;
 }
 

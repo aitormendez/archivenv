@@ -26,19 +26,18 @@
 		@if ( in_array($term_default->slug, ['doors', 'boats', 'geometry', 'optic-kinetic', 'mexico', 'fruits', 'urban-spaces', 'shadows', 'atmospheres', 'daydreams']))
 
 			@php
-			$image = get_field('featured_image_serie', 'serie_' . $serie->term_id); $term_link = get_term_link($serie->name,
-			'serie');
+			$image_slider = get_field('featured_image_serie', 'serie_' . $serie->term_id); $term_link = get_term_link($serie->name, 'serie');
 			@endphp
 
 			<div>
 				<div class="fondo hidden absolute h-full md:block md:bg-white md:opacity-75"></div>
 				<a href="{{ $term_link }}" class="serie relative flex p-5 border-naranja border-t text-marron md:border-t-0">
 					<div class="img-wrap w-1/2">
-						<img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" srcset="
-									{{ $image['sizes']['vert-1200'] }} 1200w,
-									{{ $image['sizes']['vert-800'] }} 800w,
-									{{ $image['sizes']['vert-400'] }} 400w
-									" sizes="(max-width: 700px) 600px, calc(100vw)" />
+						<img src="{{ $image_slider['url'] }}" alt="{{ $image_slider['alt'] }}" srcset="
+									{{ $image_slider['sizes']['vert-1200'] }} 1200w,
+									{{ $image_slider['sizes']['vert-800'] }} 800w,
+                  {{ $image_slider['sizes']['vert-400'] }} 400w"
+                  sizes="(max-width: 700px) 600px, calc(100vw)" />
 					</div>
 
 					<div class="data-wrap flex flex-col  w-1/2 justify-center content-center text-center p-6 pr-0">
@@ -47,8 +46,8 @@
 						@endif
 						<h2 class="text-naranja text-sm mb-0">{!! $serie->name !!}</h2>
 						<p class="text-sm mb-10 text-naranja"> ({{ get_field('periodo', 'serie_' . $serie->term_id) }})</p>
-						<p class="font-bold italic text-xs text-marron">{{ $image['title'] }}</p>
-						<p class="text-xs text-marron">{{ $image['caption'] }}</p>
+						<p class="font-bold italic text-xs text-marron">{{ $image_slider['title'] }}</p>
+						<p class="text-xs text-marron">{{ $image_slider['caption'] }}</p>
 					</div>
 				</a>
 			</div>
