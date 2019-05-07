@@ -81,10 +81,8 @@ body:not(.home):not(.contact):not(.contacte):not(.contacto):not(.tax-serie) {
       article {
         display: inline-block;
 
-        &:first-child {
-          h2 {
-            margin-top: 0;
-          }
+        h2 {
+          margin-top: 0;
         }
       }
 
