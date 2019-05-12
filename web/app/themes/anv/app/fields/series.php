@@ -8,7 +8,7 @@ $serie = new FieldsBuilder('Artwork series');
 
 $serie
 	->setLocation('taxonomy', '==', 'serie');
-	
+
 $serie
 	->addImage('featured_image_serie', [
 		'label' => 'Featured Image Serie',
@@ -26,6 +26,12 @@ $serie
 	])
 	->addText('nombre_periodo', [
 		'label' => 'Nombre del periodo',
+    ])
+    ->addText('pie_nombre', [
+		'label' => 'Pie de foto',
+    ])
+    ->addText('pie_medidas', [
+		'label' => 'Medidas para el pie de foto',
 	]);
 
 return $serie;

@@ -47,7 +47,8 @@
 						<h2 class="text-naranja text-sm mb-0">{!! $serie->name !!}</h2>
 						<p class="text-sm mb-10 text-naranja"> ({{ get_field('periodo', 'serie_' . $serie->term_id) }})</p>
 						<p class="font-bold italic text-xs text-marron">{{ $image_slider['title'] }}</p>
-						<p class="text-xs text-marron">{{ $image_slider['caption'] }}</p>
+            <p class="text-xs text-marron mb-0">{{ get_field('pie_nombre', 'serie_' . $serie->term_id) }}</p>
+            <p class="text-xs text-marron">{{ get_field('pie_medidas', 'serie_' . $serie->term_id) }}</p>
 					</div>
 				</a>
 			</div>
