@@ -32,9 +32,9 @@ load_textdomain('anv-CPT', WPMU_PLUGIN_DIR . '/' .plugin_basename( dirname( __FI
             'labels'       => $args_artwork,
         ],
         [
-        'singular' => 'Artwork',
-        'plural'   => 'Artworks',
-        'slug'     => 'artwork'
+            'singular' => 'Artwork',
+            'plural'   => 'Artworks',
+            'slug'     => 'artwork'
         ]
     );
 
@@ -90,8 +90,6 @@ load_textdomain('anv-CPT', WPMU_PLUGIN_DIR . '/' .plugin_basename( dirname( __FI
         'show_in_rest' => true,
         'hierarchical' => false,
     ] );
-
-    
 
 
     register_extended_taxonomy( 'serie', ['artwork'], [
