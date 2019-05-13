@@ -68,6 +68,26 @@
           "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
         }
       }
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/wpml-media-translation.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/wpml-string-translation.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/wpml-translation-management.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:aitormendez/acfml.git"
     }
   ],
   "require": {
@@ -85,6 +105,11 @@
     "wpackagist-plugin/remove-query-strings-from-static-resources": "*",
     "wpackagist-plugin/query-monitor": "^3.1",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.7.13",
+    "aitormendez/sitepress-multilingual-cms": "*",
+    "aitormendez/wpml-media-translation": "*",
+    "aitormendez/wpml-string-translation": "*",
+    "aitormendez/wpml-translation-management": "*",
+    "aitormendez/acfml": "*",
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
     "wpackagist-plugin/crop-thumbnails": "*",

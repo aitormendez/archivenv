@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "188a97058036fa1041324da97d4f71e2",
+    "content-hash": "06621bec21e78946d2c8cc09223d3426",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -18,6 +18,181 @@
                 "ffraenz/private-composer-installer": "^2.0"
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "aitormendez/acfml",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:aitormendez/acfml.git",
+                "reference": "91af31664328909f316147cb1568f3d7aef69e30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aitormendez/acfml/zipball/91af31664328909f316147cb1568f3d7aef69e30",
+                "reference": "91af31664328909f316147cb1568f3d7aef69e30",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPML",
+                    "homepage": "https://wpml.org/"
+                }
+            ],
+            "homepage": "https://github.com/aitormendez/acfml",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/aitormendez/acfml/tree/1.2",
+                "issues": "https://github.com/aitormendez/acfml/issues"
+            },
+            "time": "2019-04-11T09:56:37+00:00"
+        },
+        {
+            "name": "aitormendez/sitepress-multilingual-cms",
+            "version": "4.2.5",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git",
+                "reference": "8b77c942db204f0b4cc87206bfdf228a47878211"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aitormendez/sitepress-multilingual-cms/zipball/8b77c942db204f0b4cc87206bfdf228a47878211",
+                "reference": "8b77c942db204f0b4cc87206bfdf228a47878211",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPML",
+                    "homepage": "https://wpml.org/"
+                }
+            ],
+            "homepage": "https://github.com/aitormendez/sitepress-multilingual-cms",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/aitormendez/sitepress-multilingual-cms/tree/4.2.5",
+                "issues": "https://github.com/aitormendez/sitepress-multilingual-cms/issues"
+            },
+            "time": "2019-04-03T18:59:58+00:00"
+        },
+        {
+            "name": "aitormendez/wpml-media-translation",
+            "version": "2.5.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:aitormendez/wpml-media-translation.git",
+                "reference": "b026fea60121ee264f5488442c951d01d0c9d459"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aitormendez/wpml-media-translation/zipball/b026fea60121ee264f5488442c951d01d0c9d459",
+                "reference": "b026fea60121ee264f5488442c951d01d0c9d459",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPML",
+                    "homepage": "https://wpml.org/"
+                }
+            ],
+            "homepage": "https://github.com/aitormendez/wpml-media-translation",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/aitormendez/wpml-media-translation/tree/2.5.1",
+                "issues": "https://github.com/aitormendez/wpml-media-translation/issues"
+            },
+            "time": "2019-04-07T13:52:57+00:00"
+        },
+        {
+            "name": "aitormendez/wpml-string-translation",
+            "version": "2.10.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:aitormendez/wpml-string-translation.git",
+                "reference": "8c8e742c1f19f38c2b1dc6ecdecbfbd6f7b6f5ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aitormendez/wpml-string-translation/zipball/8c8e742c1f19f38c2b1dc6ecdecbfbd6f7b6f5ba",
+                "reference": "8c8e742c1f19f38c2b1dc6ecdecbfbd6f7b6f5ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPML",
+                    "homepage": "https://wpml.org/"
+                }
+            ],
+            "homepage": "https://github.com/aitormendez/wpml-string-translation",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/aitormendez/wpml-string-translation/tree/2.10.3",
+                "issues": "https://github.com/aitormendez/wpml-string-translation/issues"
+            },
+            "time": "2019-04-07T13:55:38+00:00"
+        },
+        {
+            "name": "aitormendez/wpml-translation-management",
+            "version": "2.8.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:aitormendez/wpml-translation-management.git",
+                "reference": "c9ea1ababa7215b8fbd6c9435888236e6dfe76a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aitormendez/wpml-translation-management/zipball/c9ea1ababa7215b8fbd6c9435888236e6dfe76a6",
+                "reference": "c9ea1ababa7215b8fbd6c9435888236e6dfe76a6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPML",
+                    "homepage": "https://wpml.org/"
+                }
+            ],
+            "homepage": "https://github.com/aitormendez/wpml-translation-management",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/aitormendez/wpml-translation-management/tree/2.8.4",
+                "issues": "https://github.com/aitormendez/wpml-translation-management/issues"
+            },
+            "time": "2019-04-07T13:57:43+00:00"
         },
         {
             "name": "analogmemory/wp-sync-db",
