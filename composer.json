@@ -68,26 +68,6 @@
           "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
         }
       }
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/wpml-media-translation.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/wpml-string-translation.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/wpml-translation-management.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/acfml.git"
     }
   ],
   "require": {
