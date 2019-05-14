@@ -46,7 +46,6 @@ export default {
 
         let ancho = $(this).width();
         let altoImg = $('img', this).height();
-        $(this).height(ancho - 5);
 
         if (width > 768) {
           $(this).height(ancho - 5);
@@ -57,8 +56,9 @@ export default {
       });
     }
 
-    imagesLoaded( window, function() {
+    imagesLoaded( '.main', function() {
       resize();
+      console.log('loaded');
     });
 
 
