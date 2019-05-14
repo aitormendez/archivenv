@@ -34,7 +34,7 @@ export default {
       });
     }
 
-    resize();
+
 
     window.onresize = function() {
       resize();
@@ -51,6 +51,8 @@ export default {
         }
       });
     }
+
+    resize();
 
 
 
