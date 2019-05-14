@@ -18,7 +18,7 @@
   @endwhile
 </div>
 
-<p class="text-naranja text-sm font-sans ml-4 uppercase mt-8 tracking-wide">{{ $frase_contacto }}</p>
+<p class="mt-24 text-naranja text-sm font-sans ml-4 uppercase md:mt-8 tracking-wide">{{ $frase_contacto }}</p>
 </div>
 
 

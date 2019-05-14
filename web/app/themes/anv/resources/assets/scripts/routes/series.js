@@ -43,7 +43,12 @@ export default {
     function resize() {
       $('article').each(function() {
         let ancho = $(this).width();
-        $(this).height(ancho - 5);
+        let altoImg = $('img', this).height();
+        if (width > 768) {
+          $(this).height(ancho - 5);
+        } else {
+          $(this).height(altoImg - 5);
+        }
       });
     }
 
