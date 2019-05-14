@@ -1,6 +1,7 @@
 import 'lightgallery/dist/js/lightgallery';
 import 'lightgallery/modules/lg-fullscreen';
 import 'lightgallery/modules/lg-hash';
+var imagesLoaded = require('imagesloaded');
 
 export default {
   init() {
@@ -42,17 +43,25 @@ export default {
 
     function resize() {
       $('article').each(function() {
+
         let ancho = $(this).width();
         let altoImg = $('img', this).height();
+        $(this).height(ancho - 5);
+
         if (width > 768) {
           $(this).height(ancho - 5);
         } else {
           $(this).height(altoImg - 5);
         }
+
       });
     }
 
-    resize();
+    imagesLoaded( window, function() {
+      resize();
+    });
+
+
 
 
 
