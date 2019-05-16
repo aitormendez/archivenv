@@ -24,6 +24,10 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+@import "~lightgallery/dist/css/lightgallery.min.css";
 
 /**
  * This injects any component classes registered by Tailwind plugins.
@@ -45,7 +49,17 @@
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
+@import "layouts/front-page";
 @import "layouts/tinymce";
+@import "layouts/page-about";
+@import "layouts/page-exhib";
+@import "layouts/page-contact";
+@import "layouts/archive-bio";
+@import "layouts/archive-publication";
+@import "layouts/tax-serie";
+@import "fonts/merriweather";
+@import "fonts/montserrat";
+@import "fonts/logo";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your

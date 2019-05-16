@@ -3,8 +3,16 @@
 const { default: ImageminPlugin } = require('imagemin-webpack-plugin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
 const config = require('./config');
+
+// const glob = require('glob-all');
+// const PurgecssPlugin = require('purgecss-webpack-plugin');
+
+// class TailwindExtractor {
+//   static extract(content) {
+//     return content.match(/[A-z0-9-:\/]+/g) || [];
+//   }
+// }
 
 module.exports = {
   plugins: [
@@ -31,5 +39,24 @@ module.exports = {
         },
       },
     }),
+    // new PurgecssPlugin({
+    //   paths: glob.sync([
+    //     'app/**/*.php',
+    //     'resources/views/**/*.php',
+    //     'resources/assets/scripts/**/*.js',
+    //   ]),
+    //   extractors: [
+    //     {
+    //       extractor: TailwindExtractor,
+    //       extensions: ['js', 'php'],
+    //     },
+    //   ],
+    //   whitelist: [ // Only if you need it!
+    //     'pr3','pv2','ph3',
+    //     'mb1',
+    //     'input',
+    //     'tracked-mega',
+    //   ],
+    // }),
   ],
 };

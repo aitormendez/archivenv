@@ -1,11 +1,229 @@
-.banner .nav {
-  @apply list-reset flex flex-wrap;
-}
+.banner {
+  .brand {
+    span {
+      &.archive {
+        @apply relative text-xl text-naranja mb-4 tracking-15 font-semibold;
 
-.banner .nav a {
-  @apply inline-block px-4 py-2 border-none;
+        top: -4px;
+      }
 
-  &:hover {
-    color: darken(#525ddc, 30%);
+      &.navarro {
+        &::before {
+          content: "";
+
+          @apply block relative bg-naranja mx-auto;
+
+          top: -7px;
+          width: 70px;
+          height: 2px;
+        }
+      }
+    }
+  }
+
+  .nav-lang {
+    .nav {
+      .wpml-ls-item {
+        @apply block text-marron text-xs border-l px-2 mx-0 border-naranja tracking-wide;
+      }
+
+      .wpml-ls-last-item {
+        @apply border-r;
+      }
+    }
+
+    a {
+      @apply text-marron uppercase;
+    }
+  }
+
+  .nav-primary {
+    @apply absolute flex justify-center w-screen h-screen pin-t bg-white p-10;
+
+    left: 0;
+    transition: left $trans;
+
+    &.cerrado {
+      left: -100vw;
+    }
+
+    a {
+      @apply block;
+
+      &:hover {
+        @apply text-grey;
+      }
+    }
+
+    .menu-principal-container,
+    .menu-principal-catalan-container,
+    .menu-principal-esp-container {
+      @apply flex;
+
+      .nav {
+        @apply flex flex-col list-reset text-center justify-center;
+
+        >li {
+          @apply pb-4;
+
+          >a {
+            @apply text-marron uppercase tracking-wide font-semibold;
+          }
+
+          ul {
+            @apply list-reset;
+
+            li {
+              a {
+                @apply pt-1 text-marron;
+              }
+            }
+          }
+
+          &.current-menu-parent,
+          &.current-menu-item {
+            a {
+              @apply text-naranja;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    top: 13px;
+    right: 14px;
+  }
+
+  @screen md {
+    height: 55px;
+    z-index: 1100;
+
+    .brand {
+      @apply pt-0;
+
+      span {
+        @apply inline-block mx-0 text-left;
+
+        &.archive {
+          @apply mb-0 text-xs pr-1;
+
+          top: 0;
+        }
+
+        &.navarro,
+        &.vives {
+          @apply relative text-xl pl-2 tracking-10;
+
+          width: auto;
+          top: 1px;
+
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+
+    .nav-lang {
+      margin-left: 260px;
+    }
+  }
+
+  @screen lg {
+    @apply flex p-4 justify-between;
+
+    .nav-lang {
+      margin-left: 0;
+
+      a {
+        @apply text-marron uppercase font-semibold;
+
+        font-size: 0.6rem;
+
+        span {
+          @apply relative;
+
+          top: -1px;
+        }
+      }
+    }
+
+    .nav-primary {
+      @apply static w-auto h-auto p-0 pl-4 pr-2 mt-1;
+
+      left: auto;
+
+      &.cerrado {
+        left: auto;
+      }
+
+      .menu-principal-container,
+      .menu-principal-catalan-container,
+      .menu-principal-esp-container {
+        @apply mt-1;
+
+        .nav {
+          @apply flex-row text-left;
+
+          a {
+            @apply text-xs font-normal;
+          }
+
+          >li {
+            @apply pb-0 mx-2;
+
+            &.menu-item-has-children {
+              cursor: pointer;
+            }
+
+            ul {
+              &.sub-menu {
+                @apply absolute block z-50;
+
+                top: 0;
+                height: 0;
+                overflow: hidden;
+                transition: height $trans;
+                padding-top: 62px;
+                width: 0;
+
+                &.open {
+                  height: 280px;
+                  width: auto;
+                }
+
+                a {
+                  @apply block mb-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .fondomenu {
+      left: 0;
+      top: 49px;
+      height: 0;
+      padding-bottom: 0;
+      transition: height $trans, padding-bottom $trans;
+      z-index: 1;
+
+      .borders {
+        display: none;
+      }
+
+      &.open {
+        height: 255px;
+        padding-bottom: 1em;
+
+        .borders {
+          display: block;
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,31 @@
+.page-template-page-about {
+  .content {
+    @apply pt-10;
+
+    h2 {
+      @apply mt-10 border-b border-naranja pb-2 mb-8;
+
+      &:first-child {
+        @apply mt-0;
+      }
+    }
+
+    ol {
+      >li {
+        @apply mb-4;
+      }
+    }
+  }
+
+  @screen md {
+    .chapter-content {
+      columns: 2;
+    }
+  }
+
+  @screen lg {
+    .chapter-content {
+      columns: 3;
+    }
+  }
+}
