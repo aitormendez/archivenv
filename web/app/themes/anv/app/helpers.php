@@ -137,6 +137,7 @@ function display_sidebar()
     return $display;
 }
 
+
 /**
  * Simple function to pretty up our field partial includes.
  *

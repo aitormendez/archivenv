@@ -35,7 +35,7 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.7.13",
+        "version": "5.8.0",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -100,13 +100,15 @@
     "roots/wordpress": "5.2",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.8.0",
+    "stoutlogic/acf-builder": "^1.8",
+    "johnbillion/extended-cpts": "^4.2",
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
     "analogmemory/wp-sync-db": "1.6",
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/cookie-notice": "*",
     "wpackagist-plugin/remove-query-strings-from-static-resources": "*",
-    "wpackagist-plugin/query-monitor": "^3.1",
-    "advanced-custom-fields/advanced-custom-fields-pro": "^5.7.13",
+    "wpackagist-plugin/query-monitor": "*",
     "aitormendez/sitepress-multilingual-cms": "*",
     "aitormendez/wpml-media-translation": "*",
     "aitormendez/wpml-string-translation": "*",
@@ -115,10 +117,7 @@
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
     "wpackagist-plugin/crop-thumbnails": "*",
-    "wpackagist-plugin/wpforms-lite": "*",
-    "johnbillion/extended-cpts": "^4.2",
-    "wpackagist-plugin/health-check": "*",
-    "wpackagist-plugin/classic-editor": "*"
+    "wpackagist-plugin/wpforms-lite": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",

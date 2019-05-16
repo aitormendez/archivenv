@@ -31,8 +31,7 @@
     "lint": "npm run -s lint:scripts && npm run -s lint:styles",
     "lint:scripts": "eslint resources/assets/scripts resources/assets/build",
     "lint:styles": "stylelint \"resources/assets/styles/**/*.{css,sass,scss,sss,less}\"",
-    "test": "npm run -s lint",
-    "pot": "mkdir -p ./resources/lang && find ./resources ./app -iname '*.php' | xargs xgettext --add-comments=TRANSLATORS --force-po --from-code=UTF-8 --default-domain=de_DE -k__ -k_e -k_n:1,2 -k_x:1,2c -k_ex:1,2c -k_nx:4c,12 -kesc_attr__ -kesc_attr_e -kesc_attr_x:1,2c -kesc_html__ -kesc_html_e -kesc_html_x:1,2c -k_n_noop:1,2 -k_nx_noop:3c,1,2, -k__ngettext_noop:1,2 -o resources/lang/sage.pot && find ./resources -iname '*.blade.php' | xargs xgettext --language=Python --add-comments=TRANSLATORS --force-po --from-code=UTF-8 --default-domain=de_DE -k__ -k_e -k_n:1,2 -k_x:1,2c -k_ex:1,2c -k_nx:4c,12 -kesc_attr__ -kesc_attr_e -kesc_attr_x:1,2c -kesc_html__ -kesc_html_e -kesc_html_x:1,2c -k_n_noop:1,2 -k_nx_noop:3c,1,2, -k__ngettext_noop:1,2 -j -o resources/lang/sage.pot"
+    "test": "npm run -s lint"
   },
   "engines": {
     "node": ">= 8.0.0"
@@ -54,14 +53,12 @@
     "extract-text-webpack-plugin": "~3.0.2",
     "file-loader": "^1.1.6",
     "friendly-errors-webpack-plugin": "^1.6.1",
-    "glob-all": "^3.1.0",
     "imagemin-mozjpeg": "~7.0.0",
     "imagemin-webpack-plugin": "~2.2.0",
     "import-glob": "~1.5",
     "node-sass": "~4.9.4",
     "postcss-loader": "~2.1.0",
     "postcss-safe-parser": "~3.0",
-    "purgecss-webpack-plugin": "^1.4.0",
     "resolve-url-loader": "~2.3.1",
     "rimraf": "~2.6",
     "sass-loader": "~6.0",
@@ -80,14 +77,6 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
-    "hamburgers": "^1.1.3",
-    "imagesloaded": "^4.1.4",
-    "jquery": "^3.4.0",
-    "lg-autoplay": "^1.0.4",
-    "lg-fullscreen": "^1.1.0",
-    "lg-pager": "^1.0.2",
-    "lg-thumbnail": "^1.1.0",
-    "lightgallery": "^1.6.12",
-    "slick-carousel": "^1.8.1"
+    "jquery": "^3.3.1"
   }
 }

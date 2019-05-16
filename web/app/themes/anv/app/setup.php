@@ -8,12 +8,10 @@ use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
 use StoutLogic\AcfBuilder\FieldsBuilder;
 
-
 /**
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_script('respbgimages', asset_path('scripts/respbgimages.js'), [], null, true);
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 
@@ -47,8 +45,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage'),
-        'lang_selector' => __('Lang selector', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage')
     ]);
 
     /**
@@ -94,10 +91,6 @@ add_action('widgets_init', function () {
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
     ] + $config);
-    register_sidebar([
-        'name'          => __('Lang', 'sage'),
-        'id'            => 'lang_selector'
-    ] + $config);
 });
 
 /**
@@ -139,6 +132,7 @@ add_action('after_setup_theme', function () {
     });
 });
 
+
 /**
  * Initialize ACF Builder
  */
@@ -150,24 +144,4 @@ add_action('init', function () {
             acf_add_local_field_group($field->build());
         }
     });
-});
-
-/**
- * image sizes
- */
-add_action('after_setup_theme', function () {
-    add_image_size( 'vert-1200', 1200, 1500, true );
-    add_image_size( 'vert-800', 800, 1000, true );
-    add_image_size( 'vert-400', 400, 500, true );
-    add_image_size('cuadrado-300', 300, 289, true);
-    add_image_size('cuadrado-600', 600, 579, true);
-    add_image_size('cuadrado-1200', 1200, 1157, true);
-});
-
-/**
- * i18n https://roots.io/sage/docs/theme-localization/
- */
-
-add_action('after_setup_theme', function () {
-    load_theme_textdomain('sage', get_template_directory() . '/lang/sage-' . get_locale() . '.mo');
 });
