@@ -123,8 +123,3 @@ Config::apply();
 if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
 }
-
-/**
- * WPML
- */
-define('WP_MEMORY_LIMIT', '256M');
