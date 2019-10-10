@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9dcf2314b86c5024b9f5cd3e50863e1",
+    "content-hash": "ac3167b3e13a07a070287eb196fa87b9",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -1066,6 +1066,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/crop-thumbnails/"
+        },
+        {
+            "name": "wpackagist-plugin/duplicator",
+            "version": "1.3.22",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duplicator/",
+                "reference": "tags/1.3.22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicator.1.3.22.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duplicator/"
         },
         {
             "name": "wpackagist-plugin/easy-wp-smtp",

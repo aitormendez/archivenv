@@ -117,7 +117,8 @@
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
     "wpackagist-plugin/crop-thumbnails": "*",
-    "wpackagist-plugin/wpforms-lite": "*"
+    "wpackagist-plugin/wpforms-lite": "*",
+    "wpackagist-plugin/duplicator": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
