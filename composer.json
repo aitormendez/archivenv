@@ -109,6 +109,7 @@
     "wpackagist-plugin/cookie-notice": "*",
     "wpackagist-plugin/remove-query-strings-from-static-resources": "*",
     "wpackagist-plugin/query-monitor": "*",
+    "aitormendez/sitepress-multilingual-cms": "*",
     "aitormendez/wpml-media-translation": "*",
     "aitormendez/wpml-string-translation": "*",
     "aitormendez/wpml-translation-management": "*",
