@@ -2,7 +2,11 @@
 @section('content') @component('components.bg-image', ['image' => $image]) @endcomponent
 
 <div class="descripcion pl-10 pr-10 mt-4 mb-4 md:absolute md:p-0 md:m-0">
-	<p class="text-grey text-xs text-center m-0 tracking-02 md:text-left md:text-white"> {!! $descripcion !!} </p>
+  <p class="text-grey text-xs text-center m-0 tracking-02 md:text-left md:text-white"> {!! $descripcion !!} </p>
+  @php
+      $field = get_field('background_image', 'option');
+      var_dump($field);
+  @endphp
 </div>
 
 <div class="container-grid md:w-1/2">
