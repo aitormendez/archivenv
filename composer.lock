@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "194f9893c67440d88d3069fbd97af1ee",
+    "content-hash": "c9dcf2314b86c5024b9f5cd3e50863e1",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -53,6 +53,41 @@
                 "issues": "https://github.com/aitormendez/acfml/issues"
             },
             "time": "2019-10-10T10:43:07+00:00"
+        },
+        {
+            "name": "aitormendez/sitepress-multilingual-cms",
+            "version": "4.2.9",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git",
+                "reference": "86556714ed3506a4e1a650f6b601781103edcb9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aitormendez/sitepress-multilingual-cms/zipball/86556714ed3506a4e1a650f6b601781103edcb9c",
+                "reference": "86556714ed3506a4e1a650f6b601781103edcb9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPML",
+                    "homepage": "https://wpml.org/"
+                }
+            ],
+            "homepage": "https://github.com/aitormendez/sitepress-multilingual-cms",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/aitormendez/sitepress-multilingual-cms/tree/4.2.9",
+                "issues": "https://github.com/aitormendez/sitepress-multilingual-cms/issues"
+            },
+            "time": "2019-10-10T14:26:16+00:00"
         },
         {
             "name": "aitormendez/wpml-media-translation",
