@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac3167b3e13a07a070287eb196fa87b9",
+    "content-hash": "d67cb9f29929d39e874ab0c95c78f25d",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -656,16 +656,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.2.3",
+            "version": "5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.2.3"
+                "reference": "5.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.2.3",
-                "reference": "5.2.3"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.2.4",
+                "reference": "5.2.4"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -689,7 +689,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-09-04T22:41:56+00:00"
+            "time": "2019-10-14T20:28:22+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -1015,15 +1015,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "trunk"
+                "reference": "tags/4.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1568655698"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.4.0.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1395,16 +1395,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.5.0",
+            "version": "3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "0afebf16a2e7f1e434920fa976253576151effe9"
+                "reference": "82cd0f854ceca17731d6d019c7098e3755c45060"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/0afebf16a2e7f1e434920fa976253576151effe9",
-                "reference": "0afebf16a2e7f1e434920fa976253576151effe9",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/82cd0f854ceca17731d6d019c7098e3755c45060",
+                "reference": "82cd0f854ceca17731d6d019c7098e3755c45060",
                 "shasum": ""
             },
             "require": {
@@ -1442,7 +1442,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-09-26T23:12:26+00:00"
+            "time": "2019-10-16T21:14:26+00:00"
         }
     ],
     "aliases": [],
