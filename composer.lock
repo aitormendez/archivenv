@@ -56,16 +56,16 @@
         },
         {
             "name": "aitormendez/sitepress-multilingual-cms",
-            "version": "4.3.14",
+            "version": "4.4.6",
             "source": {
                 "type": "git",
                 "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git",
-                "reference": "6183290c10f379776218837c820c84578bf96e09"
+                "reference": "ca1e38cfa937d4e8526ae3fc4aec562506ebe5f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/sitepress-multilingual-cms/zipball/6183290c10f379776218837c820c84578bf96e09",
-                "reference": "6183290c10f379776218837c820c84578bf96e09",
+                "url": "https://api.github.com/repos/aitormendez/sitepress-multilingual-cms/zipball/ca1e38cfa937d4e8526ae3fc4aec562506ebe5f0",
+                "reference": "ca1e38cfa937d4e8526ae3fc4aec562506ebe5f0",
                 "shasum": ""
             },
             "require": {
@@ -84,23 +84,23 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/sitepress-multilingual-cms/tree/4.3.14",
+                "source": "https://github.com/aitormendez/sitepress-multilingual-cms/tree/4.4.6",
                 "issues": "https://github.com/aitormendez/sitepress-multilingual-cms/issues"
             },
-            "time": "2020-05-24T08:06:16+00:00"
+            "time": "2020-12-05T11:37:48+00:00"
         },
         {
             "name": "aitormendez/wpml-media-translation",
-            "version": "2.5.5",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:aitormendez/wpml-media-translation.git",
-                "reference": "b017d479e77126aa2d250db914e1747272d784b3"
+                "reference": "ce42c32e91a5aa3bcccfa2d2e650b263e8bcc380"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/wpml-media-translation/zipball/b017d479e77126aa2d250db914e1747272d784b3",
-                "reference": "b017d479e77126aa2d250db914e1747272d784b3",
+                "url": "https://api.github.com/repos/aitormendez/wpml-media-translation/zipball/ce42c32e91a5aa3bcccfa2d2e650b263e8bcc380",
+                "reference": "ce42c32e91a5aa3bcccfa2d2e650b263e8bcc380",
                 "shasum": ""
             },
             "require": {
@@ -119,23 +119,23 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/wpml-media-translation/tree/2.5.5",
+                "source": "https://github.com/aitormendez/wpml-media-translation/tree/2.6.1",
                 "issues": "https://github.com/aitormendez/wpml-media-translation/issues"
             },
-            "time": "2020-05-24T08:09:45+00:00"
+            "time": "2020-12-05T11:55:48+00:00"
         },
         {
             "name": "aitormendez/wpml-string-translation",
-            "version": "3.0.11",
+            "version": "3.1.5",
             "source": {
                 "type": "git",
                 "url": "git@github.com:aitormendez/wpml-string-translation.git",
-                "reference": "d6c136a221fe6b1395724bd4c440da6712fcce0c"
+                "reference": "6394aed14d1afdef65fa06f71e6178dd63831ac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/wpml-string-translation/zipball/d6c136a221fe6b1395724bd4c440da6712fcce0c",
-                "reference": "d6c136a221fe6b1395724bd4c440da6712fcce0c",
+                "url": "https://api.github.com/repos/aitormendez/wpml-string-translation/zipball/6394aed14d1afdef65fa06f71e6178dd63831ac0",
+                "reference": "6394aed14d1afdef65fa06f71e6178dd63831ac0",
                 "shasum": ""
             },
             "require": {
@@ -154,23 +154,23 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/wpml-string-translation/tree/3.0.11",
+                "source": "https://github.com/aitormendez/wpml-string-translation/tree/3.1.5",
                 "issues": "https://github.com/aitormendez/wpml-string-translation/issues"
             },
-            "time": "2020-05-24T08:11:23+00:00"
+            "time": "2020-12-05T11:46:44+00:00"
         },
         {
             "name": "aitormendez/wpml-translation-management",
-            "version": "2.9.9",
+            "version": "2.10.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:aitormendez/wpml-translation-management.git",
-                "reference": "cb1ae82c6939450c77c7bba5c67eea3ca6916fe8"
+                "reference": "fbe531b433b6ecce850949e69e196463faa16f8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aitormendez/wpml-translation-management/zipball/cb1ae82c6939450c77c7bba5c67eea3ca6916fe8",
-                "reference": "cb1ae82c6939450c77c7bba5c67eea3ca6916fe8",
+                "url": "https://api.github.com/repos/aitormendez/wpml-translation-management/zipball/fbe531b433b6ecce850949e69e196463faa16f8d",
+                "reference": "fbe531b433b6ecce850949e69e196463faa16f8d",
                 "shasum": ""
             },
             "require": {
@@ -189,10 +189,10 @@
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/aitormendez/wpml-translation-management/tree/2.9.9",
+                "source": "https://github.com/aitormendez/wpml-translation-management/tree/2.10.3",
                 "issues": "https://github.com/aitormendez/wpml-translation-management/issues"
             },
-            "time": "2020-05-24T08:14:52+00:00"
+            "time": "2020-12-05T11:51:39+00:00"
         },
         {
             "name": "analogmemory/wp-sync-db",
@@ -696,20 +696,24 @@
         },
         {
             "name": "roots/bedrock-autoloader",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/bedrock-autoloader.git",
-                "reference": "885f2a5c425d82dfd811ef4f13ab8f5bcc89cd70"
+                "reference": "f508348a3365ab5ce7e045f5fd4ee9f0a30dd70f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/bedrock-autoloader/zipball/885f2a5c425d82dfd811ef4f13ab8f5bcc89cd70",
-                "reference": "885f2a5c425d82dfd811ef4f13ab8f5bcc89cd70",
+                "url": "https://api.github.com/repos/roots/bedrock-autoloader/zipball/f508348a3365ab5ce7e045f5fd4ee9f0a30dd70f",
+                "reference": "f508348a3365ab5ce7e045f5fd4ee9f0a30dd70f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
+            },
+            "require-dev": {
+                "10up/wp_mock": "^0.4.2",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "autoload": {
@@ -750,7 +754,7 @@
             "support": {
                 "forum": "https://discourse.roots.io/",
                 "issues": "https://github.com/roots/bedrock-autoloader/issues",
-                "source": "https://github.com/roots/bedrock-autoloader/tree/1.0.3"
+                "source": "https://github.com/roots/bedrock-autoloader/tree/1.0.4"
             },
             "funding": [
                 {
@@ -762,7 +766,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-05-18T04:43:20+00:00"
+            "time": "2020-12-04T15:59:12+00:00"
         },
         {
             "name": "roots/wordpress",
