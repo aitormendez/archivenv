@@ -6,10 +6,12 @@ web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 
-
 # WordPress
 web/wp
 web/.htaccess
+
+# Logs
+*.log
 
 # Dotenv
 .env

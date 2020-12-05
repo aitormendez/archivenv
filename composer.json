@@ -23,27 +23,25 @@
     "issues": "https://github.com/roots/bedrock/issues",
     "forum": "https://discourse.roots.io/category/bedrock"
   },
-  "config": {
-    "preferred-install": "dist"
-  },
   "repositories": [
     {
       "type": "composer",
-      "url": "https://wpackagist.org"
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
     },
     {
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.8.5",
+        "version": "5.8.9",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
           "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
         },
         "require": {
-          "composer/installers": "^1.4",
-          "ffraenz/private-composer-installer": "^2.0"
+          "composer/installers": "^1.8",
+          "ffraenz/private-composer-installer": "5.0.1"
         }
       }
     },
@@ -94,10 +92,11 @@
   ],
   "require": {
     "php": ">=7.1",
-    "composer/installers": "^1.4",
-    "vlucas/phpdotenv": "^3.0.0",
-    "oscarotero/env": "^1.1.0",
-    "roots/wordpress": "5.2.4",
+    "composer/installers": "^1.8",
+    "vlucas/phpdotenv": "^4.1.8",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/wordpress": "5.5.3",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.8.0",
@@ -107,8 +106,6 @@
     "analogmemory/wp-sync-db": "1.6",
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/cookie-notice": "*",
-    "wpackagist-plugin/remove-query-strings-from-static-resources": "*",
-    "wpackagist-plugin/query-monitor": "*",
     "aitormendez/sitepress-multilingual-cms": "*",
     "aitormendez/wpml-media-translation": "*",
     "aitormendez/wpml-string-translation": "*",
@@ -117,13 +114,19 @@
     "wpackagist-plugin/wp-optimize": "*",
     "wpackagist-plugin/easy-wp-smtp": "*",
     "wpackagist-plugin/crop-thumbnails": "*",
-    "wpackagist-plugin/wpforms-lite": "*",
-    "wpackagist-plugin/duplicator": "*"
+    "wpackagist-plugin/wpforms-lite": "*"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.0.2",
-    "roave/security-advisories": "dev-master"
+    "squizlabs/php_codesniffer": "^3.5.6",
+    "roave/security-advisories": "dev-master",
+    "wpackagist-plugin/query-monitor": "*"
   },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "extra": {
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
