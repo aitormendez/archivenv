@@ -31,5 +31,5 @@ class FrontPage extends Controller
 		$output = html_entity_decode($desc);
     return $output;
   }
-  
+
 }

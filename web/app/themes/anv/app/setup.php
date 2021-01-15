@@ -169,6 +169,10 @@ add_action('after_setup_theme', function () {
  * i18n https://roots.io/sage/docs/theme-localization/
  */
 
+// add_action('after_setup_theme', function () {
+//     load_theme_textdomain('sage', get_template_directory() . '/lang/sage-' . get_locale() . '.mo');
+// });
+
 add_action('after_setup_theme', function () {
-    load_theme_textdomain('sage', get_template_directory() . '/lang/sage-' . get_locale() . '.mo');
+    load_theme_textdomain('sage', get_template_directory() . '/lang');
 });

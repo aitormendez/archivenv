@@ -21,7 +21,7 @@
 			$default_term_id = icl_object_id( $serie->term_id, $serie->taxonomy, true, $default_language );
 			$term_default = get_term( $default_term_id, $serie->taxonomy );
 			$icl_adjust_id_url_filter_off = $orig_flag_value;
-		@endphp
+    @endphp
 
 		@if ( in_array($term_default->slug, ['doors', 'boats', 'geometry', 'optic-kinetic', 'mexico', 'fruits', 'urban-spaces', 'shadows', 'atmospheres', 'existencial-realism']))
 
