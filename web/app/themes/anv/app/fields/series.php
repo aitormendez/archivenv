@@ -14,7 +14,7 @@ $serie
 		'label' => 'Featured Image Serie',
 		'instructions' => '',
 		'required' => 1,
-		'return_format' => 'array',
+		'return_format' => 'id',
 		'preview_size' => 'thumbnail',
 		'library' => 'all',
 	])

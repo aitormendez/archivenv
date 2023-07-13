@@ -32,20 +32,16 @@ export default {
 
       $('.container-grid .grid').css('visibility', 'hidden');
 
-      $('.container-grid .grid').imagesLoaded(function() {
+      $('.container-grid .grid').imagesLoaded(function () {
         $('.container-grid .grid').css('visibility', 'visible');
         posicionar();
       });
 
-
-
-      $(window).resize(function() {
+      $(window).resize(function () {
         posicionar();
       });
 
-
-
-      $(document).keydown(function(e) {
+      $(document).keydown(function (e) {
         switch (e.which) {
           case 37: // left
             $('.container-grid .grid').slick('slickPrev');
@@ -62,16 +58,7 @@ export default {
         }
         e.preventDefault(); // prevent the default action (scroll / move caret)
       });
-
-
-
-
     }
-
-
-
-
-
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS

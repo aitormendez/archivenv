@@ -12,19 +12,25 @@ class FrontPage extends Controller
     return $array[array_rand($array)]['bg_img']['id'];
   }
 
-  public function series() {
-    $args = array(
-      'taxonomy'          => 'series',
-      'hide_empty'        => 0,
-      'parent'            => 0,
-      'meta_key'          => 'orden',
-      'orderby'           => 'meta_value',
-      'order'             => 'ASC',
-    );
-    $terms = get_terms('serie', $args );
+//   public function series() {
+//     $args = array(
+//       'taxonomy'          => 'series',
+//       'hide_empty'        => 1,
+//       'meta_key'          => 'orden',
+//       'orderby'           => 'meta_value',
+//       'order'             => 'ASC',
+//       'meta_query'    => [
+//         [
+//             'key'       => 'mostrar_en_portada',
+//             'value'     => true,
+//             'compare'   => '=',
+//         ],
+//       ]
+//     );
+//     $terms = get_terms('serie', $args );
 
-    return $terms;
-  }
+//     return $terms;
+//   }
 
   public function descripcion() {
     $desc= get_bloginfo('description');

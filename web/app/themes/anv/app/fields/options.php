@@ -29,6 +29,20 @@ $options
         'return_format' => 'array',
         'preview_size' => 'thumbnail',
         'library' => 'all',
+    ])
+    ->endRepeater()
+    ->addTaxonomy('series_portada', [
+        'label' => 'Series en portada',
+        'instructions' => '',
+        'required' => 1,
+        'taxonomy' => 'serie',
+        'field_type' => 'checkbox',
+        'allow_null' => 0,
+        'add_term' => 1,
+        'save_terms' => 0,
+        'load_terms' => 0,
+        'return_format' => 'object',
+        'multiple' => 1,
     ]);
 
 return $options;

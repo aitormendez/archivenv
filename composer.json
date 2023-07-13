@@ -1,151 +1,150 @@
 {
-  "name": "roots/bedrock",
-  "type": "project",
-  "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
-  "authors": [
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    }
-  ],
-  "keywords": [
-    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org",
-      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.9.4",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
+    "name": "roots/bedrock",
+    "type": "project",
+    "license": "MIT",
+    "description": "WordPress boilerplate with Composer, easier configuration, and an improved folder structure",
+    "homepage": "https://roots.io/bedrock/",
+    "authors": [
+        {
+            "name": "Scott Walkinshaw",
+            "email": "scott.walkinshaw@gmail.com",
+            "homepage": "https://github.com/swalkinshaw"
         },
-        "require": {
-          "composer/installers": "^1.8",
-          "ffraenz/private-composer-installer": "5.0.1"
+        {
+            "name": "Ben Word",
+            "email": "ben@benword.com",
+            "homepage": "https://github.com/retlehs"
         }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "analogmemory/wp-sync-db",
-        "type": "wordpress-plugin",
-        "version": "1.6",
-        "dist": {
-          "type": "zip",
-          "url": "https://github.com/AnalogMemory/wp-sync-db/archive/master.zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "wp-sync-db/wp-sync-db-media-files",
-        "type": "wordpress-plugin",
-        "version": "master",
-        "dist": {
-          "type": "zip",
-          "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
-        }
-      }
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/sitepress-multilingual-cms.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/wpml-media-translation.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/wpml-string-translation.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/wpml-translation-management.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:aitormendez/acfml.git"
-    }
-  ],
-  "require": {
-    "php": ">=7.1",
-    "composer/installers": "^1.8",
-    "vlucas/phpdotenv": "^4.1.8",
-    "oscarotero/env": "^2.1",
-    "roots/bedrock-autoloader": "^1.0",
-    "roots/wordpress": "6.0.1",
-    "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0",
-    "advanced-custom-fields/advanced-custom-fields-pro": "^5.8.0",
-    "stoutlogic/acf-builder": "^1.8",
-    "johnbillion/extended-cpts": "^4.2",
-    "wp-sync-db/wp-sync-db-media-files": "dev-master",
-    "analogmemory/wp-sync-db": "1.6",
-    "wpackagist-plugin/autodescription": "*",
-    "wpackagist-plugin/cookie-notice": "*",
-    "aitormendez/sitepress-multilingual-cms": "*",
-    "aitormendez/wpml-media-translation": "*",
-    "aitormendez/wpml-string-translation": "*",
-    "aitormendez/wpml-translation-management": "*",
-    "aitormendez/acfml": "1.4.0",
-    "wpackagist-plugin/wp-optimize": "*",
-    "wpackagist-plugin/easy-wp-smtp": "*",
-    "wpackagist-plugin/crop-thumbnails": "*",
-    "wpackagist-plugin/wpforms-lite": "*"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^3.5.6",
-    "roave/security-advisories": "dev-master",
-    "wpackagist-plugin/query-monitor": "*"
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "allow-plugins": {
-      "composer/installers": true,
-      "roots/wordpress-core-installer": true,
-      "ffraenz/private-composer-installer": true
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "extra": {
-    "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
-    },
-    "wordpress-install-dir": "web/wp"
-  },
-  "scripts": {
-    "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
     ],
-    "test": [
-      "phpcs"
-    ]
-  }
+    "keywords": [
+        "bedrock",
+        "composer",
+        "roots",
+        "wordpress",
+        "wp",
+        "wp-config"
+    ],
+    "support": {
+        "issues": "https://github.com/roots/bedrock/issues",
+        "forum": "https://discourse.roots.io/category/bedrock"
+    },
+    "repositories": {
+        "1": {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        },
+        "2": {
+            "type": "package",
+            "package": {
+                "name": "analogmemory/wp-sync-db",
+                "type": "wordpress-plugin",
+                "version": "1.6",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/AnalogMemory/wp-sync-db/archive/master.zip"
+                }
+            }
+        },
+        "3": {
+            "type": "package",
+            "package": {
+                "name": "wp-sync-db/wp-sync-db-media-files",
+                "type": "wordpress-plugin",
+                "version": "master",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip"
+                }
+            }
+        },
+        "4": {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                "version": "6.1.7",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
+                },
+                "require": {
+                    "composer/installers": "^2.2",
+                    "ffraenz/private-composer-installer": "^5.0.1"
+                }
+            }
+        },
+        "satispress": {
+            "type": "composer",
+            "url": "https://plugins.e451.net/satispress/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "composer/installers": "^2.2",
+        "vlucas/phpdotenv": "^5.5",
+        "oscarotero/env": "^2.1",
+        "roots/bedrock-autoloader": "^1.0",
+        "roots/bedrock-disallow-indexing": "^2.0",
+        "roots/wordpress": "6.2.2",
+        "roots/wp-config": "1.0.0",
+        "roots/wp-password-bcrypt": "1.1.0",
+        "wpackagist-theme/twentytwentythree": "^1.0",
+        "advanced-custom-fields/advanced-custom-fields-pro": "*",
+        "stoutlogic/acf-builder": "^1.8",
+        "johnbillion/extended-cpts": "^4.2",
+        "wp-sync-db/wp-sync-db-media-files": "dev-master",
+        "analogmemory/wp-sync-db": "1.6",
+        "wpackagist-plugin/autodescription": "*",
+        "wpackagist-plugin/cookie-notice": "*",
+        "wpackagist-plugin/wp-optimize": "*",
+        "wpackagist-plugin/easy-wp-smtp": "*",
+        "wpackagist-plugin/crop-thumbnails": "*",
+        "wpackagist-plugin/wpforms-lite": "*",
+        "satispress/sitepress-multilingual-cms": "*",
+        "satispress/wpml-wpforms": "*",
+        "satispress/acfml": "*",
+        "satispress/wpml-media-translation": "*",
+        "satispress/wpml-string-translation": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7.1",
+        "roave/security-advisories": "dev-latest"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "composer/installers": true,
+            "roots/wordpress-core-installer": true,
+            "ffraenz/private-composer-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-paths": {
+            "web/app/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "web/app/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "web/app/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "web/wp"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.example', '.env');\""
+        ],
+        "test": [
+            "phpcs"
+        ]
+    }
 }
